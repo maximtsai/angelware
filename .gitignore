@@ -51,6 +51,7 @@ ExportedObj/
 *.svd
 *.pdb
 *.mdb
+*.json
 *.opendb
 *.VC.db
 
