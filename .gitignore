@@ -25,6 +25,13 @@
 
 # Visual Studio cache directory
 .vs/
+.vsconfig/
+.vsconfig
+
+# Unity packages
+/[Pp]ackages/manifest.json
+/[Pp]ackages/packages-lock.json
+
 
 # Gradle cache directory
 .gradle/
