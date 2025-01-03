@@ -6,12 +6,17 @@ using UnityEngine.EventSystems;
 public class DraggableItem : MonoBehaviour
 {
     // Vector3 mousePositionOffset;
+    public int folderIdx;
+    private DropFolder currentDropArea;
+    private Vector3 startPos;
 
-    private Vector3 GetMouseWorldPosition()
+    Transform parentAfterDrag;
+
+    private Vector3 GetMouseWorldPosition(float zIdx = -1f)
     {
         // capture mouse position and return WorldPoint
         Vector3 newPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        newPos.z = 0f;
+        newPos.z = zIdx;
         return newPos;
     }
 
@@ -21,15 +26,69 @@ public class DraggableItem : MonoBehaviour
         // mousePositionOffset = gameObject.transform.position - GetMouseWorldPosition();
     }
 
+    private void OnMouseUp()
+    {
+        transform.position = GetMouseWorldPosition(0);
+        if (currentDropArea != null)
+        {
+            if (folderIdx == currentDropArea.folderIdx)
+            {
+                Destroy(gameObject);
+            }
+            else
+            {
+                StartCoroutine(InterpolateOverTime(transform.position, startPos, 0.36f));
+            }
+        }
+
+    }
+
+
     private void OnMouseDrag()
     {
         transform.position = GetMouseWorldPosition();
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("DropArea"))
+        {
+            currentDropArea = other.GetComponent<DropFolder>();
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("DropArea") && currentDropArea == other.GetComponent<DropFolder>())
+        {
+            currentDropArea = null;
+        }
+    }
+
+    private IEnumerator InterpolateOverTime(Vector3 from, Vector3 to, float time)
+    {
+        float elapsedTime = 0f;
+
+        while (elapsedTime < time)
+        {
+            float t = elapsedTime / time; // Normalized time (0 to 1)
+            t = 1 - Mathf.Pow(1 - t, 3);
+
+            transform.position = Vector3.Lerp(from, to, t);
+            elapsedTime += Time.deltaTime;
+            yield return null; // Wait for the next frame
+        }
+
+        // Ensure the final position is set exactly
+        transform.position = to;
+    }
+
+
+
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Start");
+        startPos = transform.position;
     }
 
     // Update is called once per frame
