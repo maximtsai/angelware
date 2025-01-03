@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1367323546314795911}
   - component: {fileID: 7169949781741831075}
+  - component: {fileID: 5626647309945042026}
+  - component: {fileID: 7619505148940830112}
   m_Layer: 0
   m_Name: FirewallBrick
   m_TagString: Untagged
@@ -84,3 +86,44 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5626647309945042026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5882887120090742159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e4db8191373b0c488ca54f81d659e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  state0Sprite: {fileID: 21300000, guid: 3c1fdc3b7fc71e941bf1937fe1c2a34d, type: 3}
+  state1Sprite: {fileID: 21300000, guid: c40e3663edb8a1a478fe434936d67c86, type: 3}
+  state2Sprite: {fileID: 21300000, guid: 9c6bc96ad45bfd14a8f0f26ecafee77b, type: 3}
+--- !u!61 &7619505148940830112
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5882887120090742159}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.95, y: 0.55}
+    newSize: {x: 1.05, y: 0.55}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.95, y: 0.55}
+  m_EdgeRadius: 0

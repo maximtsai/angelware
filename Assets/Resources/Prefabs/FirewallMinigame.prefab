@@ -100,6 +100,7 @@ GameObject:
   m_Component:
   - component: {fileID: 207797368093308500}
   - component: {fileID: 1983908189451683608}
+  - component: {fileID: 124361085309730484}
   m_Layer: 0
   m_Name: FirewallBG
   m_TagString: Untagged
@@ -174,3 +175,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &124361085309730484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7188266571767229489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5118b3c473d8fbc4db611562a0f189e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthySprite: {fileID: 21300000, guid: 7a95c5e18ef05e241a0c06a8c5ba0381, type: 3}
+  warningSprite: {fileID: 21300000, guid: 0f475ffcbb08f984db5576955e935d6f, type: 3}
+  destroyedSprite: {fileID: 21300000, guid: 6a571731c286bc846b3e28e1d0fb4499, type: 3}
