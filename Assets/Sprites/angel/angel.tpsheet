@@ -1,0 +1,51 @@
+#
+# Sprite sheet data for Unity.
+#
+# To import these sprites into your Unity project, download "TexturePackerImporter":
+# https://www.codeandweb.com/texturepacker/unity
+#
+# $TexturePacker:SmartUpdate:12e136b9786941d9b2c6befc82ee27f2:4327521fa3b191775b6dca8ba2592314:b1eb2d3df4e9382edf74bc26be46a6f5$
+#
+:format=40300
+:texture=angel-0.png
+:size=1024x2048
+:pivotpoints=enabled
+:borders=disabled
+:alphahandling=ClearTransparentPixels
+
+angel idle bubble_0000;1;729;294;344; 0.5;0.5; 0;0;0;0
+angel idle bubble_0001;1;729;294;344; 0.5;0.5; 0;0;0;0
+angel idle bubble_0002;1;729;294;344; 0.5;0.5; 0;0;0;0
+angel idle bubble_0003;1;729;294;344; 0.5;0.5; 0;0;0;0
+angel idle bubble_0004;477;1007;294;340; 0.5;0.5; 0;0;0;0
+angel idle bubble_0005;477;1007;294;340; 0.5;0.5; 0;0;0;0
+angel idle bubble_0006;477;1007;294;340; 0.5;0.5; 0;0;0;0
+angel idle bubble_0007;477;1007;294;340; 0.5;0.5; 0;0;0;0
+angel idle bubble_0008;1;1075;296;331; 0.5;0.5; 0;0;0;0
+angel idle bubble_0009;1;1075;296;331; 0.5;0.5; 0;0;0;0
+angel idle bubble_0010;1;1075;296;331; 0.5;0.5; 0;0;0;0
+angel idle bubble_0011;1;1075;296;331; 0.5;0.5; 0;0;0;0
+angel idle_0000;299;1070;176;336; 0.5;0.5; 0;0;0;0
+angel idle_0001;299;1070;176;336; 0.5;0.5; 0;0;0;0
+angel idle_0002;299;1070;176;336; 0.5;0.5; 0;0;0;0
+angel idle_0003;299;1070;176;336; 0.5;0.5; 0;0;0;0
+angel idle_0004;773;1012;173;335; 0.5;0.5; 0;0;0;0
+angel idle_0005;773;1012;173;335; 0.5;0.5; 0;0;0;0
+angel idle_0006;773;1012;173;335; 0.5;0.5; 0;0;0;0
+angel idle_0007;773;1012;173;335; 0.5;0.5; 0;0;0;0
+angel idle_0008;297;742;175;326; 0.5;0.5; 0;0;0;0
+angel idle_0009;297;742;175;326; 0.5;0.5; 0;0;0;0
+angel idle_0010;297;742;175;326; 0.5;0.5; 0;0;0;0
+angel idle_0011;297;742;175;326; 0.5;0.5; 0;0;0;0
+AngelFly1_0000;495;1575;490;231; 0.5;0.5; 0;0;0;0
+AngelFly1_0001;495;1575;490;231; 0.5;0.5; 0;0;0;0
+AngelFly1_0002;493;1349;489;224; 0.5;0.5; 0;0;0;0
+AngelFly1_0003;493;1349;489;224; 0.5;0.5; 0;0;0;0
+AngelFly1_0004;497;1808;492;239; 0.5;0.5; 0;0;0;0
+AngelFly1_0005;497;1808;492;239; 0.5;0.5; 0;0;0;0
+AngelFly2_0000;1;1623;492;209; 0.5;0.5; 0;0;0;0
+AngelFly2_0001;1;1623;492;209; 0.5;0.5; 0;0;0;0
+AngelFly2_0002;1;1408;490;213; 0.5;0.5; 0;0;0;0
+AngelFly2_0003;1;1408;490;213; 0.5;0.5; 0;0;0;0
+AngelFly2_0004;1;1834;494;213; 0.5;0.5; 0;0;0;0
+AngelFly2_0005;1;1834;494;213; 0.5;0.5; 0;0;0;0
