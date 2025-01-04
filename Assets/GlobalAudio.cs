@@ -5,6 +5,8 @@ using UnityEngine;
 public class GlobalAudio : MonoBehaviour
 {
     public AudioClip clickSound;
+    public AudioClip clickDownSound;
+    public AudioClip clickUpSound;
 
     private AudioSource audioSource;
 
@@ -18,7 +20,12 @@ public class GlobalAudio : MonoBehaviour
     void Update()
     {
         if (Input.GetMouseButtonDown(0)) {
-            audioSource.clip = clickSound;
+            audioSource.clip = clickDownSound;
+            audioSource.Play();
+        }
+
+        if (Input.GetMouseButtonUp(0)) {
+            audioSource.clip = clickUpSound;
             audioSource.Play();
         }
     }

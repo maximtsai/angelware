@@ -142,3 +142,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickSound: {fileID: 8300000, guid: 768eb4498b6c37544a3f9a0e7fa323b5, type: 3}
+  clickDownSound: {fileID: 8300000, guid: ad0e5e5a02e515342bdc0f4ce0f6db30, type: 3}
+  clickUpSound: {fileID: 8300000, guid: 080d18c9d603fea48b0e2c8ea73ac437, type: 3}
