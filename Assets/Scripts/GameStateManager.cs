@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CueMinigames : MonoBehaviour
+public class GameStateManager : MonoBehaviour
 {
     public GameObject firewallMinigamePrefab;
     public GameObject popupMinigamePrefab;

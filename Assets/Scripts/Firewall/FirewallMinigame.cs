@@ -139,6 +139,8 @@ public class FirewallMinigame : MonoBehaviour
             foreach(GameObject brick in bricks) {
                 brick.GetComponent<FirewallBrick>().SetHealthState(FirewallBrick.HealthState.Destroyed);
             }
+
+            // Trigger game over
         }
     }
 
