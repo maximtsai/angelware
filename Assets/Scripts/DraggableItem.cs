@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 public class DraggableItem : MonoBehaviour
 {
-    public GameStateManager gameStateManager;
+    public GameObject gameStateManager;
     // Vector3 mousePositionOffset;
     public int folderIdx;
     private DropFolder currentDropArea;
@@ -35,7 +35,7 @@ public class DraggableItem : MonoBehaviour
             if (folderIdx == currentDropArea.folderIdx)
             {
                 if (gameStateManager != null) {
-                    gameStateManager.IncreaseFileDropped();
+                    gameStateManager.GetComponent<GameStateManager>().IncreaseFileDropped();
                 }
                 else {
                     Debug.Log("ERROR: Set Game State Manager on file! File: " + name);

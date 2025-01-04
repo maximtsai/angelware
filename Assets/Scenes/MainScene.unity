@@ -322,7 +322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c2012c7a57ad724f9289b12823463fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameStateManager: {fileID: 1120627621}
+  gameStateManager: {fileID: 1120627620}
   folderIdx: 1
 --- !u!212 &391798202
 SpriteRenderer:
@@ -755,7 +755,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c2012c7a57ad724f9289b12823463fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameStateManager: {fileID: 1120627621}
+  gameStateManager: {fileID: 1120627620}
   folderIdx: 1
 --- !u!212 &795348319
 SpriteRenderer:
@@ -903,7 +903,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c2012c7a57ad724f9289b12823463fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameStateManager: {fileID: 1120627621}
+  gameStateManager: {fileID: 1120627620}
   folderIdx: 1
 --- !u!212 &857689113
 SpriteRenderer:
@@ -987,7 +987,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fileDroppedCount: 0
-  filesLeftText: {fileID: 0}
+  filesLeftText: {fileID: 1464479278}
 --- !u!4 &1120627622
 Transform:
   m_ObjectHideFlags: 0
@@ -1097,7 +1097,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c2012c7a57ad724f9289b12823463fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameStateManager: {fileID: 1120627621}
+  gameStateManager: {fileID: 1120627620}
   folderIdx: 1
 --- !u!212 &1124612200
 SpriteRenderer:
@@ -1577,7 +1577,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c2012c7a57ad724f9289b12823463fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameStateManager: {fileID: 1120627621}
+  gameStateManager: {fileID: 1120627620}
   folderIdx: 1
 --- !u!212 &1551832220
 SpriteRenderer:
@@ -1725,7 +1725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c2012c7a57ad724f9289b12823463fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameStateManager: {fileID: 1120627621}
+  gameStateManager: {fileID: 1120627620}
   folderIdx: 1
 --- !u!212 &1589044231
 SpriteRenderer:
@@ -1962,7 +1962,7 @@ PrefabInstance:
     - target: {fileID: 8159730948908082131, guid: afe49385f944d464bad66c2a6a1ff888, type: 3}
       propertyPath: gameStateManager
       value: 
-      objectReference: {fileID: 1120627621}
+      objectReference: {fileID: 1120627620}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afe49385f944d464bad66c2a6a1ff888, type: 3}
 --- !u!1 &1704674658
@@ -2160,7 +2160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c2012c7a57ad724f9289b12823463fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameStateManager: {fileID: 1120627621}
+  gameStateManager: {fileID: 1120627620}
   folderIdx: 1
 --- !u!212 &1717469806
 SpriteRenderer:
@@ -2308,7 +2308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c2012c7a57ad724f9289b12823463fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameStateManager: {fileID: 1120627621}
+  gameStateManager: {fileID: 1120627620}
   folderIdx: 1
 --- !u!212 &1924162539
 SpriteRenderer:
@@ -2456,7 +2456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c2012c7a57ad724f9289b12823463fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameStateManager: {fileID: 1120627621}
+  gameStateManager: {fileID: 1120627620}
   folderIdx: 1
 --- !u!212 &1970934063
 SpriteRenderer:

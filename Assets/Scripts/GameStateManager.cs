@@ -11,30 +11,39 @@ public class GameStateManager : MonoBehaviour
 
     public int fileDroppedCount = 0;
 
-    public TextMeshPro filesLeftText;
+    public GameObject filesLeftText;
 
     private GameObject firewallMinigamePrefab;
     private GameObject popupMinigamePrefab;
+
+    enum GamePhase { BEGINNING, POPUP, FIREWALL }
+    private GamePhase currentPhase = GamePhase.BEGINNING;
 
     void Start()
     {
         firewallMinigamePrefab = Resources.Load<GameObject>("Prefabs/FirewallMinigame");
         int filesLeft = WIN_THRESHOLD - fileDroppedCount;
-        filesLeftText.text = "Files Left: " + filesLeft.ToString();
+        filesLeftText.GetComponent<TMP_Text>().text = "Files Left: " + filesLeft.ToString();
     }
 
     public void IncreaseFileDropped() {
         fileDroppedCount += 1;
         int filesLeft = WIN_THRESHOLD - fileDroppedCount;
-        filesLeftText.text = "Files Left: " + filesLeft.ToString();
+        filesLeftText.GetComponent<TMP_Text>().text = "Files Left: " + filesLeft.ToString();
         if (fileDroppedCount >= WIN_THRESHOLD) {
             // trigger win state
         }
         else if (fileDroppedCount >= FIREWALL_THRESHOLD) {
-            AddFirewallMinigame();
+            if (currentPhase != GamePhase.FIREWALL) {
+                currentPhase = GamePhase.FIREWALL;
+                AddFirewallMinigame();
+            }
         }
         else if (fileDroppedCount >= POPUP_THRESHOLD) {
-            AddPopupMinigame();
+            if (currentPhase != GamePhase.POPUP) {
+                currentPhase = GamePhase.POPUP;
+                AddPopupMinigame();
+            }
         }
     }
 
