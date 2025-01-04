@@ -4,29 +4,35 @@ using UnityEngine;
 
 public class GlobalAudio : MonoBehaviour
 {
+    public AudioClip mainBgm;
     public AudioClip clickSound;
     public AudioClip clickDownSound;
     public AudioClip clickUpSound;
 
-    private AudioSource audioSource;
+    private AudioSource audioSourceLoop;
+    private AudioSource audioSourceSingle;
 
     // Start is called before the first frame update
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        audioSourceLoop = GetComponents<AudioSource>()[0];
+        audioSourceSingle = GetComponents<AudioSource>()[1];
+
+        audioSourceLoop.clip = mainBgm;
+        audioSourceLoop.Play();
     }
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0)) {
-            audioSource.clip = clickDownSound;
-            audioSource.Play();
+            audioSourceSingle.clip = clickDownSound;
+            audioSourceSingle.Play();
         }
 
         if (Input.GetMouseButtonUp(0)) {
-            audioSource.clip = clickUpSound;
-            audioSource.Play();
+            audioSourceSingle.clip = clickUpSound;
+            audioSourceSingle.Play();
         }
     }
 }
