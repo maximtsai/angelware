@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class GameStateManager : MonoBehaviour
 {
-    public GameObject firewallMinigamePrefab;
-    public GameObject popupMinigamePrefab;
+    private GameObject firewallMinigamePrefab;
+    private GameObject popupMinigamePrefab;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +23,9 @@ public class GameStateManager : MonoBehaviour
     // Do not know if this is the best way to do it!! Here goes nothing!!
     IEnumerator GameFlow() {
         
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(10);
+
+        
 
         AddFirewallMinigame();
     }
