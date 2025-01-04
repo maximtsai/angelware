@@ -195,6 +195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c2012c7a57ad724f9289b12823463fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  folderIdx: 0
 --- !u!212 &180874090
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -358,6 +359,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &472866101
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4369058519629768014, guid: ac5d1847c2825ba45988de1cb5ec4269, type: 3}
+      propertyPath: m_Name
+      value: GlobalAudio
+      objectReference: {fileID: 0}
+    - target: {fileID: 4733753162848361365, guid: ac5d1847c2825ba45988de1cb5ec4269, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4733753162848361365, guid: ac5d1847c2825ba45988de1cb5ec4269, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.13338181
+      objectReference: {fileID: 0}
+    - target: {fileID: 4733753162848361365, guid: ac5d1847c2825ba45988de1cb5ec4269, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.012359731
+      objectReference: {fileID: 0}
+    - target: {fileID: 4733753162848361365, guid: ac5d1847c2825ba45988de1cb5ec4269, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0036366659
+      objectReference: {fileID: 0}
+    - target: {fileID: 4733753162848361365, guid: ac5d1847c2825ba45988de1cb5ec4269, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4733753162848361365, guid: ac5d1847c2825ba45988de1cb5ec4269, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4733753162848361365, guid: ac5d1847c2825ba45988de1cb5ec4269, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4733753162848361365, guid: ac5d1847c2825ba45988de1cb5ec4269, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4733753162848361365, guid: ac5d1847c2825ba45988de1cb5ec4269, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4733753162848361365, guid: ac5d1847c2825ba45988de1cb5ec4269, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4733753162848361365, guid: ac5d1847c2825ba45988de1cb5ec4269, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ac5d1847c2825ba45988de1cb5ec4269, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,6 +742,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c2012c7a57ad724f9289b12823463fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  folderIdx: 0
 --- !u!61 &640208983
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -893,6 +952,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c2012c7a57ad724f9289b12823463fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  folderIdx: 0
 --- !u!212 &998410117
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1150,6 +1210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c2012c7a57ad724f9289b12823463fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  folderIdx: 0
 --- !u!212 &1621909765
 SpriteRenderer:
   m_ObjectHideFlags: 0
