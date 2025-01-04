@@ -31,7 +31,6 @@ public class FirewallBrick : MonoBehaviour
     }
 
     void OnMouseDown() {
-        Debug.Log("clicked!");
         Repair();
         firewallMinigame.UpdateHealth();
     }
@@ -54,7 +53,6 @@ public class FirewallBrick : MonoBehaviour
     }
 
     void Repair() {
-        // TODO: need to propagate this up...
         switch (healthState) {
             case HealthState.State0:
                 // do nothing

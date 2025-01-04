@@ -5,6 +5,12 @@ using UnityEngine;
 
 public class FirewallMinigame : MonoBehaviour
 {
+    public enum FirewallHealth {Healthy, Warning, Destroyed};
+
+    public AudioClip fireLoop;
+    public AudioClip flameUp;
+    public AudioClip burnUp;
+
     private const int TOTAL_BRICK_COUNT = 23;
 
     private bool active = false;
@@ -15,17 +21,21 @@ public class FirewallMinigame : MonoBehaviour
     private GameObject brickPrefab;
     private List<GameObject> bricks = new List<GameObject>();
     private FirewallBG firewallBG;
+    private AudioSource audioSourceLoop;
+    private AudioSource audioSourceSingle;
 
     private float timer;
     private float randomInterval;
     private float minTimeInterval = 0.8f;
     private float maxTimeInterval = 1.6f;
-    private const float MIN_TIME_INTERVAL_LOWER_LIMIT = 0.1f;
+    private const float MIN_TIME_INTERVAL_LOWER_LIMIT = 0.2f;
     private int level = 0;
     private int levelThresholdCount = 0;
     private const int LEVEL_THRESHOLD = 4;
 
     private float health = 0.0f;
+
+    private FirewallHealth firewallHealth;
 
     // Start is called before the first frame update
     void Start()
@@ -35,10 +45,15 @@ public class FirewallMinigame : MonoBehaviour
         timer = 0.0f;
         randomInterval = Random.Range(minTimeInterval, maxTimeInterval);
 
+        firewallHealth = FirewallHealth.Healthy;
+
         brickGrid = GameObject.Find("BrickGrid").GetComponent<Grid>();
         brickPrefab = Resources.Load<GameObject>("Prefabs/FirewallBrick");
 
         firewallBG = GameObject.Find("FirewallBG").GetComponent<FirewallBG>();
+
+        audioSourceLoop = GetComponents<AudioSource>()[0];
+        audioSourceSingle = GetComponents<AudioSource>()[1];
 
         InstantiateBricks();
 
@@ -92,15 +107,34 @@ public class FirewallMinigame : MonoBehaviour
         }
         // a function measuring the health https://www.desmos.com/calculator/02gyistj1v
         health = state1Count * 1f + state2Count * 2f + destroyedBrickCount * 4f;
-        Debug.Log("Firewall health: " + health.ToString());
+        // Debug.Log("Firewall health: " + health.ToString());
         
         if (health < 15f) {
+            audioSourceLoop.Stop();
+
+            firewallHealth = FirewallHealth.Healthy;
             firewallBG.Healthy();
         }
         else if (health < 40f) {
+            if (firewallHealth == FirewallHealth.Healthy) {
+                audioSourceSingle.clip = flameUp;
+                audioSourceSingle.Play();
+
+                audioSourceLoop.clip = fireLoop;
+                audioSourceLoop.Play();
+            }
+            
+            firewallHealth = FirewallHealth.Warning;
             firewallBG.Warning();
         }
         else {
+            if (firewallHealth == FirewallHealth.Healthy || firewallHealth == FirewallHealth.Warning) {
+                audioSourceSingle.clip = burnUp;
+                audioSourceSingle.Play();
+
+                audioSourceLoop.Stop();
+            }
+            firewallHealth = FirewallHealth.Destroyed;
             firewallBG.Destroyed();
             foreach(GameObject brick in bricks) {
                 brick.GetComponent<FirewallBrick>().SetHealthState(FirewallBrick.HealthState.Destroyed);
@@ -114,7 +148,7 @@ public class FirewallMinigame : MonoBehaviour
 
         // cap it at 0.2 seconds 
         if (minTimeInterval < MIN_TIME_INTERVAL_LOWER_LIMIT) {
-            Debug.Log("FIREWALL LEVEL CAPPED!");
+            // Debug.Log("FIREWALL LEVEL CAPPED!");
             return;
         }
         
