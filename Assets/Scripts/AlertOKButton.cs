@@ -7,6 +7,6 @@ public class AlertOKButton : MonoBehaviour
     public Alert alert;
 
     public void OKButtonClicked () {
-        Destroy(alert);
+        alert.BackToIdle();
     }
 }

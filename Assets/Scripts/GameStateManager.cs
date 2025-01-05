@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEditor.SearchService;
+using UnityEditorInternal;
+using UnityEngine.SceneManagement;
+using System.Diagnostics.Tracing;
 
 public class GameStateManager : MonoBehaviour
 {
@@ -17,11 +21,13 @@ public class GameStateManager : MonoBehaviour
     public GameObject folder3;
     public GameObject folder4;
     public List<GameObject> files;
+    public Timer timer;
 
     private List<Vector3> originalPositions;
     private List<Vector3> leftPositions;
 
     private GameObject firewallMinigamePrefab;
+    private GameObject firewallInstance;
     private GameObject popupMinigamePrefab;
 
     enum GamePhase { BEGINNING, POPUP, FIREWALL }
@@ -39,11 +45,13 @@ public class GameStateManager : MonoBehaviour
     private Vector3 FOLDER_4_LEFT_POSITION = new Vector3(-2f, -1.5f, -0.5f);
 
     private bool movingLeft = false;
-    private float timer = 0.0f;
+    private bool gameOverTriggered = false;
 
     void Start()
     {
+        popupMinigamePrefab = Resources.Load<GameObject>("Prefabs/MinigameHandlerPopup");
         firewallMinigamePrefab = Resources.Load<GameObject>("Prefabs/FirewallMinigame");
+        firewallInstance = null;
         int filesLeft = WIN_THRESHOLD - fileDroppedCount;
         filesLeftText.GetComponent<TMP_Text>().text = "Files Left: " + filesLeft.ToString();
 
@@ -73,6 +81,39 @@ public class GameStateManager : MonoBehaviour
             var newX = (oldX - -8f) * 0.6f - 8f;
             leftPositions.Add(new Vector3(newX, file.transform.position.y, file.transform.position.z));
         }
+    }
+
+    public void Update()
+    {
+        if (!gameOverTriggered)
+        {
+            if (timer.isGameOver())
+            {
+                // Trigger game over (out of time)
+                Debug.Log("GameOver: Out of time");
+                StartCoroutine(GameOver("GameOver", 5f));      
+                gameOverTriggered = true;    
+            }
+            else if (firewallInstance && firewallInstance.GetComponentInChildren<FirewallMinigame>().isGameOver())
+            {
+                // Trigger game over (destroyed firewall)
+                Debug.Log("GameOver: Firewall destroyed");
+                StartCoroutine(GameOver("GameOver", 5f));
+                gameOverTriggered = true;
+            }
+        }
+    }
+
+    private IEnumerator GameOver(string scene, float transitionDelay)
+    {
+        float elapsedTime = 0f;
+
+        while (elapsedTime < transitionDelay)
+        {
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+        SceneManager.LoadScene(scene);
     }
 
     private IEnumerator InterpolateOverTime(GameObject obj, Vector3 from, Vector3 to, float time)
@@ -140,7 +181,7 @@ public class GameStateManager : MonoBehaviour
 
     void AddFirewallMinigame() {
         if (firewallMinigamePrefab != null) {
-            Instantiate(firewallMinigamePrefab, new Vector3(5.5f, -2f, -1f), Quaternion.identity);
+            firewallInstance = Instantiate(firewallMinigamePrefab, new Vector3(5.5f, -2f, -1f), Quaternion.identity);
         }
     }
 

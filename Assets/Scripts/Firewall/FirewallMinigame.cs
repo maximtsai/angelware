@@ -141,6 +141,7 @@ public class FirewallMinigame : MonoBehaviour
             }
 
             // Trigger game over
+            // WL 1/5/25: Put all the game over logic in the game state manager
         }
     }
 
@@ -193,5 +194,10 @@ public class FirewallMinigame : MonoBehaviour
         }
         active = true;
         enterCoroutine = null;
+    }
+
+    public bool isGameOver()
+    {
+        return firewallHealth == FirewallHealth.Destroyed;
     }
 }
