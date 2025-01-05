@@ -9,4 +9,10 @@ public class QuitButton : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void OnMouseDown()
+    {
+        Debug.Log("Quitting");
+        Application.Quit();
+    }
 }
