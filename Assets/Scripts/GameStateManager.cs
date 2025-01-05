@@ -22,6 +22,7 @@ public class GameStateManager : MonoBehaviour
     public GameObject folder4;
     public List<GameObject> files;
     public Timer timer;
+    public Alert alert;
 
     private List<Vector3> originalPositions;
     private List<Vector3> leftPositions;
@@ -145,7 +146,24 @@ public class GameStateManager : MonoBehaviour
             if (currentPhase != GamePhase.FIREWALL) {
                 currentPhase = GamePhase.FIREWALL;
 
-                for (int i = 0; i < files.Count; i++) {
+                alert.TriggerAlert("firewall");
+            }
+        }
+        else if (fileDroppedCount >= POPUP_THRESHOLD) {
+            if (currentPhase != GamePhase.POPUP) {
+                currentPhase = GamePhase.POPUP;
+                
+                alert.TriggerAlert("popup");
+            }
+        }
+    }
+
+    public void AddMinigame() {
+        if (currentPhase == GamePhase.POPUP) {
+            AddPopupMinigame();
+        }
+        else if (currentPhase == GamePhase.FIREWALL) {
+            for (int i = 0; i < files.Count; i++) {
                     if (files[i] == null) {
                         // some files are destroyed, continue
                         continue;
@@ -161,15 +179,7 @@ public class GameStateManager : MonoBehaviour
                 StartCoroutine(InterpolateOverTime(folder2, FOLDER_2_START_POSITION, FOLDER_2_LEFT_POSITION, .5f));
                 StartCoroutine(InterpolateOverTime(folder3, FOLDER_3_START_POSITION, FOLDER_3_LEFT_POSITION, .5f));
                 StartCoroutine(InterpolateOverTime(folder4, FOLDER_4_START_POSITION, FOLDER_4_LEFT_POSITION, .5f));
-                Invoke("AddFirewallMinigame", 1f);
-
-            }
-        }
-        else if (fileDroppedCount >= POPUP_THRESHOLD) {
-            if (currentPhase != GamePhase.POPUP) {
-                currentPhase = GamePhase.POPUP;
-                AddPopupMinigame();
-            }
+                Invoke("AddFirewallMinigame", .5f);
         }
     }
 

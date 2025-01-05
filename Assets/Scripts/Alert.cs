@@ -59,7 +59,13 @@ public class Alert : MonoBehaviour
         }
     }
 
-    public void TriggerAlert() {
+    public void TriggerAlert(string type) {
+        if (type == "popup") {
+            window.GetComponent<Image>().sprite = windowMalwareSprite;
+        }
+        else if (type == "firewall") {
+            window.GetComponent<Image>().sprite = windowFirewallSprite;
+        }
         phase = Phase.WAITING;
         uiSpritesAnimation.currentSpriteSequence = 0;
         uiSpritesAnimation.duration = 0.6f;
@@ -73,7 +79,7 @@ public class Alert : MonoBehaviour
 
             uiSpritesAnimation.Stop();
             image.sprite = idleSprite;
-            
+
             exclamation.SetActive(false);
             window.SetActive(true);
             okButton.SetActive(true);
