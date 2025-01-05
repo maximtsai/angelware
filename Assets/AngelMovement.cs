@@ -28,10 +28,11 @@ public class AngelMovement : MonoBehaviour
 
     	// convert to world pos
     	Vector3 mouseWorldPosition = mainCamera.ScreenToWorldPoint(mouseScreenPosition);
+        Vector3 mouseWorldPositionOffset = mouseWorldPosition + new Vector3(0.9f, -1.6f, 0.0f);
 
     	Vector3 oldPos = transform.position;
 
-    	transform.position = new Vector3(mouseWorldPosition.x * 0.1f + transform.position.x * 0.9f, mouseWorldPosition.y * 0.1f + transform.position.y * 0.9f, -1f);
+    	transform.position = new Vector3(mouseWorldPositionOffset.x * 0.1f + transform.position.x * 0.9f, mouseWorldPositionOffset.y * 0.1f + transform.position.y * 0.9f, -5f);
 
     	Vector3 diff = transform.position - oldPos;
     	
@@ -40,7 +41,7 @@ public class AngelMovement : MonoBehaviour
 
   private void updateVelocityAndAnim(Vector3 diff) {
     lastFewVelocity = lastFewVelocity * 0.5f + diff * 0.5f;
-    if (lastFewVelocity.magnitude < 0.01f) {
+    if (lastFewVelocity.magnitude < 0.003f) {
     	SwitchState("idle");
     } else if (lastFewVelocity.y < 0) {
     	// flying up (I think)
@@ -64,10 +65,10 @@ public class AngelMovement : MonoBehaviour
             	}
                 break;
             case "flyup":
-    			myAnim.Play("ang_fly1");
+    			myAnim.Play("ang_fly_up");
                 break;
             case "flydown":
-    			myAnim.Play("ang_fly2");
+    			myAnim.Play("ang_fly_down");
                 break;
             default:
     			myAnim.Play("ang_idle");
