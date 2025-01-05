@@ -49,6 +49,7 @@ public class GameStateManager : MonoBehaviour
 
     void Start()
     {
+        popupMinigamePrefab = Resources.Load<GameObject>("Prefabs/MinigameHandlerPopup");
         firewallMinigamePrefab = Resources.Load<GameObject>("Prefabs/FirewallMinigame");
         firewallInstance = null;
         int filesLeft = WIN_THRESHOLD - fileDroppedCount;
