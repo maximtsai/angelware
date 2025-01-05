@@ -10,6 +10,7 @@ using UnityEngine.UIElements;
 
 public class MinigamePopup : MonoBehaviour
 {
+    public List<GameObject> malwarePopupPrefabs;
     public int numMaxPopups = 10;
     public float intervalBetweenSpawns = 5.0f;
     public float chanceToSpawn = 0.50f;
@@ -38,17 +39,20 @@ public class MinigamePopup : MonoBehaviour
             {
                 // Randomly select a prefab
                 // TODO: Update the random selection to match the final list of malware sprites
-                int randomPopupIndex = 8;
-                while (0 == randomPopupIndex % 8 || 6 == randomPopupIndex)
-                {
-                    randomPopupIndex = Mathf.RoundToInt(UnityEngine.Random.Range(2, 17));
-                }
-                string resourceName = "Prefabs/Minigame_Popups/Malware-" + randomPopupIndex.ToString("00");
+                // int randomPopupIndex = 8;
+                // while (0 == randomPopupIndex % 8 || 6 == randomPopupIndex)
+                // {
+                //     randomPopupIndex = Mathf.RoundToInt(UnityEngine.Random.Range(2, 17));
+                // }
+                // string resourceName = "Prefabs/Minigame_Popups/Malware-" + randomPopupIndex.ToString("00");
+                
+                int randomPopupIndex = UnityEngine.Random.Range(0, malwarePopupPrefabs.Count);
                 try
                 {
                     // Spawn the prefab into the scene and set its properties
                     Camera c = Camera.main;
-                    GameObject popup = (GameObject) Instantiate(Resources.Load(resourceName));
+                    // GameObject popup = (GameObject) Instantiate(Resources.Load(resourceName));
+                    GameObject popup = (GameObject) Instantiate(malwarePopupPrefabs[randomPopupIndex]);
                     Renderer r = popup.GetComponent<Renderer>();
                     popup.gameObject.SetActive(false);
                     popup.GetComponentInChildren<Popup>().minigameController = this;
@@ -79,7 +83,7 @@ public class MinigamePopup : MonoBehaviour
                 catch(Exception e)
                 {
                     Debug.Log("Failed to instantiate prefab");
-                    Debug.Log("Attempted to spawn: " + resourceName);
+                    Debug.Log("Attempted to spawn: " + malwarePopupPrefabs[randomPopupIndex].name);
                     Debug.Log(e);
                 }
             }

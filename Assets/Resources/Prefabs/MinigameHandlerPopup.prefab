@@ -44,6 +44,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cac44269644aa141ac4f682557a9e5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  malwarePopupPrefabs:
+  - {fileID: 4951887284127169618, guid: 53c31b67591e6f0499c7095334a7d290, type: 3}
+  - {fileID: 6874525372452039656, guid: 9761c1b6c1bf3614f96a2af441c00302, type: 3}
   numMaxPopups: 10
   intervalBetweenSpawns: 5
   chanceToSpawn: 0.5

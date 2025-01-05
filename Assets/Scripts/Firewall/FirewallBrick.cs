@@ -36,7 +36,7 @@ public class FirewallBrick : MonoBehaviour
         healthState = HealthState.State0;
         GetComponent<SpriteRenderer>().enabled = true;
 
-        brickType = Random.Range(0,3);
+        brickType = Random.Range(0,4);
         
         SetAppearance();
     }
