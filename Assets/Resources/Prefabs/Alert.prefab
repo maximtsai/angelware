@@ -318,13 +318,14 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1139218908231092134}
+  - {fileID: 1332861221280043559}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 714, y: -371}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 215, y: 135}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1139218908926712752
 CanvasRenderer:
@@ -354,7 +355,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a6b0c2d3ff74bcb4ebb0d2d8a2058308, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c28009d9cf73ede4db2b13a6d48c8f90, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -419,13 +420,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   duration: 1
-  playOnAwake: 1
+  playOnAwake: 0
   loop: 1
   currentSpriteSequence: 0
   spriteSequences:
   - myList:
-    - {fileID: 21300000, guid: a6b0c2d3ff74bcb4ebb0d2d8a2058308, type: 3}
-    - {fileID: 21300000, guid: 28b4f964dfb206e4bb4bf0f09fd3adda, type: 3}
+    - {fileID: 21300000, guid: c28009d9cf73ede4db2b13a6d48c8f90, type: 3}
+    - {fileID: 21300000, guid: cadebcb8c9280ad4184049b28602cba6, type: 3}
+    - {fileID: 21300000, guid: 1bd63b0e07811944ab00726b7a92df6a, type: 3}
+    - {fileID: 21300000, guid: b8b661b5d399be64ebd82136a81a329d, type: 3}
 --- !u!114 &1139218908926712754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -438,5 +441,83 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2b9a505d89b9234f93b390ba2b7af91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  idleSprite: {fileID: 21300000, guid: c28009d9cf73ede4db2b13a6d48c8f90, type: 3}
   alertEnter: {fileID: 7400000, guid: a59770034088c4b47b97de43d232b54b, type: 2}
   windowSprite: {fileID: 21300000, guid: 4d4503f9275c8ae44a106dd0a0189e5a, type: 3}
+  exclamation: {fileID: 2672084391945771680}
+--- !u!1 &2672084391945771680
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1332861221280043559}
+  - component: {fileID: 137242072280105078}
+  - component: {fileID: 7951184337861145729}
+  m_Layer: 5
+  m_Name: Exclamation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1332861221280043559
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2672084391945771680}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1139218908926712759}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -3.8, y: 18.3}
+  m_SizeDelta: {x: 19, y: 47}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &137242072280105078
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2672084391945771680}
+  m_CullTransparentMesh: 1
+--- !u!114 &7951184337861145729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2672084391945771680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 040c12a14ffc5514183c923b0ebdfbcc, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
