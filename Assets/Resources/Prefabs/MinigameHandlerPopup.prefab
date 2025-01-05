@@ -41,9 +41,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 5392127092189863228}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48c2274f5c94ae340ba6ffb57f8f2035, type: 3}
+  m_Script: {fileID: 11500000, guid: 4cac44269644aa141ac4f682557a9e5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   numMaxPopups: 10
-  intervalBetweenSpawns: 1
+  intervalBetweenSpawns: 5
   chanceToSpawn: 0.5
