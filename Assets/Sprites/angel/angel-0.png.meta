@@ -44,7 +44,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -116,757 +116,253 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: angel idle bubble_0000
+      name: AngelFly1
       rect:
         serializedVersion: 2
         x: 1
-        y: 729
-        width: 294
-        height: 344
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e66f9386171425745b25bc2af83cdd15
-      internalID: -1554484551
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: angel idle bubble_0001
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 729
-        width: 294
-        height: 344
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8a89ff5c42a66084c93b49427b1cbba2
-      internalID: -1867149033
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: angel idle bubble_0002
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 729
-        width: 294
-        height: 344
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9e10eba10b2e7454e87ce71ffe8dabbe
-      internalID: 866711436
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: angel idle bubble_0003
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 729
-        width: 294
-        height: 344
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 02852b939e4ca4a40bfdb095c135f6f1
-      internalID: -1530004387
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: angel idle bubble_0004
-      rect:
-        serializedVersion: 2
-        x: 477
-        y: 1007
-        width: 294
-        height: 340
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 000bc86a21359a04a9bf68e5e7ea1562
-      internalID: -780673842
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: angel idle bubble_0005
-      rect:
-        serializedVersion: 2
-        x: 477
-        y: 1007
-        width: 294
-        height: 340
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2f7270900806aba49b5071096794c2b4
-      internalID: 766032457
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: angel idle bubble_0006
-      rect:
-        serializedVersion: 2
-        x: 477
-        y: 1007
-        width: 294
-        height: 340
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9e493d458047bd746a46a336756d1e90
-      internalID: -1870551612
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: angel idle bubble_0007
-      rect:
-        serializedVersion: 2
-        x: 477
-        y: 1007
-        width: 294
-        height: 340
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d0a4eb7590b742441a663d5bc7171b40
-      internalID: 726342897
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: angel idle bubble_0008
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 1075
-        width: 296
-        height: 331
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ddbc2ad9f9ed6a14d8b6344c6d9205b1
-      internalID: -634738095
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: angel idle bubble_0009
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 1075
-        width: 296
-        height: 331
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a6886b13293ef2f4bb1958b84f0991d9
-      internalID: -663636613
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: angel idle bubble_0010
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 1075
-        width: 296
-        height: 331
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3014c31754ca81b4789646efba8801c3
-      internalID: 1168557810
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: angel idle bubble_0011
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 1075
-        width: 296
-        height: 331
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b9b37a93d4ff30e4fae9f6f3158b3491
-      internalID: 1947984976
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: angel idle_0000
-      rect:
-        serializedVersion: 2
-        x: 299
-        y: 1070
-        width: 176
-        height: 336
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 88ec18f614b5e274fa974227850bc6fb
-      internalID: -2055674838
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: angel idle_0001
-      rect:
-        serializedVersion: 2
-        x: 299
-        y: 1070
-        width: 176
-        height: 336
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 21bfb874e437ac149a9e015f68c5865b
-      internalID: 3466975
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: angel idle_0002
-      rect:
-        serializedVersion: 2
-        x: 299
-        y: 1070
-        width: 176
-        height: 336
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b1cadd1e5f91b4a4386c881263a6870e
-      internalID: 1980670619
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: angel idle_0003
-      rect:
-        serializedVersion: 2
-        x: 299
-        y: 1070
-        width: 176
-        height: 336
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 857384397829de64e9bc32cbdb1f02bb
-      internalID: 1498847028
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: angel idle_0004
-      rect:
-        serializedVersion: 2
-        x: 773
-        y: 1012
-        width: 173
-        height: 335
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 273c8371773c4694e8a2d042a4ce34a7
-      internalID: 363576673
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: angel idle_0005
-      rect:
-        serializedVersion: 2
-        x: 773
-        y: 1012
-        width: 173
-        height: 335
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f766c7698dd66104ea58ab5757acb378
-      internalID: 1437588472
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: angel idle_0006
-      rect:
-        serializedVersion: 2
-        x: 773
-        y: 1012
-        width: 173
-        height: 335
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9852bea938be68d43bd091c7b619c073
-      internalID: -995286398
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: angel idle_0007
-      rect:
-        serializedVersion: 2
-        x: 773
-        y: 1012
-        width: 173
-        height: 335
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9eb797197b4d74f4e8ca01cef89a8eea
-      internalID: -1189879317
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: angel idle_0008
-      rect:
-        serializedVersion: 2
-        x: 297
-        y: 742
-        width: 175
-        height: 326
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aa67c375fb3ec9f46bb93b3191d14e36
-      internalID: 1416387226
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: angel idle_0009
-      rect:
-        serializedVersion: 2
-        x: 297
-        y: 742
-        width: 175
-        height: 326
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4d4a9c1fa17621f46890201ba77a8830
-      internalID: -50558790
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: angel idle_0010
-      rect:
-        serializedVersion: 2
-        x: 297
-        y: 742
-        width: 175
-        height: 326
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ad8d6f9d50c8b7e4891a570674a2db20
-      internalID: 1493284176
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: angel idle_0011
-      rect:
-        serializedVersion: 2
-        x: 297
-        y: 742
-        width: 175
-        height: 326
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 616d70b1dec692a408c74d5ca235bac8
-      internalID: -1468121663
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AngelFly1_0000
-      rect:
-        serializedVersion: 2
-        x: 495
-        y: 1575
-        width: 490
-        height: 231
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 71dc549d5b3ee0d4f94b373ec8073eea
-      internalID: -1326729399
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AngelFly1_0001
-      rect:
-        serializedVersion: 2
-        x: 495
-        y: 1575
-        width: 490
-        height: 231
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 06fe601ed02833644b12072f1b25f5ce
-      internalID: 375044392
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AngelFly1_0002
-      rect:
-        serializedVersion: 2
-        x: 493
-        y: 1349
-        width: 489
-        height: 224
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: de0c962460335fe498d5b1dce1a5e96b
-      internalID: 15936732
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AngelFly1_0003
-      rect:
-        serializedVersion: 2
-        x: 493
-        y: 1349
-        width: 489
-        height: 224
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2874e9e4a412b4c46ae0290e87a802ac
-      internalID: 417969862
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AngelFly1_0004
-      rect:
-        serializedVersion: 2
-        x: 497
-        y: 1808
+        y: 602
         width: 492
-        height: 239
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 234
+      alignment: 9
+      pivot: {x: 0.50101626, y: 0.47863248}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9e1045ac1c7fab47a449445477b3b41
-      internalID: -1266648774
+      spriteID: f26b1bc56083a604d8ac750716a70328
+      internalID: -348320803
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AngelFly1_0005
+      name: AngelFly2
       rect:
         serializedVersion: 2
-        x: 497
-        y: 1808
-        width: 492
-        height: 239
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 422
+        y: 787
+        width: 497
+        height: 236
+      alignment: 9
+      pivot: {x: 0.51006037, y: 0.47457626}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4f8140c79e4a134ba0911a006902267
-      internalID: -252847863
+      spriteID: 490c65eadeeeb7c47bdbffd573044588
+      internalID: -1815202867
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AngelFly2_0000
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 1623
-        width: 492
-        height: 209
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 853c585dd881d7f41bc97dafaa524068
-      internalID: 289771754
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AngelFly2_0001
+      name: AngelFly3
       rect:
         serializedVersion: 2
         x: 1
-        y: 1623
-        width: 492
-        height: 209
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 780
+        width: 501
+        height: 243
+      alignment: 9
+      pivot: {x: 0.49401197, y: 0.47736627}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab8c09d55306aba45b566b28be93600d
-      internalID: 294501693
+      spriteID: 179623e63e6b3a34cb27c8e1adde07ce
+      internalID: 775437928
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AngelFly2_0002
+      name: AngelFlyUp1
       rect:
         serializedVersion: 2
         x: 1
-        y: 1408
-        width: 490
-        height: 213
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 386
+        width: 498
+        height: 222
+      alignment: 9
+      pivot: {x: 0.50100404, y: 0.5112613}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ebf595091d33cc4cac772ef5d830034
-      internalID: -2124688876
+      spriteID: 6528d59bb63d7394ba02520716dc86c4
+      internalID: 1513548211
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AngelFly2_0003
+      name: AngelFlyUp2
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1408
-        width: 490
-        height: 213
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 494
+        y: 569
+        width: 498
+        height: 225
+      alignment: 9
+      pivot: {x: 0.5050201, y: 0.5088889}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85f27c0ba5e677143af8afc4813cc680
-      internalID: 647863261
+      spriteID: 54992785f41fc7b4b8336c413550ba51
+      internalID: -1330988406
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AngelFly2_0004
+      name: AngelFlyUp3
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1834
-        width: 494
-        height: 213
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 282
+        y: 300
+        width: 496
+        height: 216
+      alignment: 9
+      pivot: {x: 0.51310486, y: 0.5300926}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b99eeed79f096c478b7c6eacec93cdc
-      internalID: -746324347
+      spriteID: 5abdb3959f1422a448ff9adbcf9594cc
+      internalID: 1266132848
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AngelFly2_0005
+      name: angelidle1
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1834
-        width: 494
-        height: 213
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1860
+        y: 677
+        width: 187
+        height: 346
+      alignment: 9
+      pivot: {x: 0.51604277, y: 0.5101156}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d7450c71cbb5814d9a3c57fb031308a
-      internalID: -1718860830
+      spriteID: 9390a1d55bdce4e4482f1a1833132b9b
+      internalID: 2086977079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: angelidle2
+      rect:
+        serializedVersion: 2
+        x: 1867
+        y: 326
+        width: 180
+        height: 345
+      alignment: 9
+      pivot: {x: 0.5361111, y: 0.51449275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1345ade54448d247a71448974b54c0a
+      internalID: -1685037848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: angelidle3
+      rect:
+        serializedVersion: 2
+        x: 1675
+        y: 686
+        width: 189
+        height: 337
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5148368}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfe55eceff41b9e45bae8374146cbf6e
+      internalID: -1902668496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: angelidlebubble1
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 19
+        width: 305
+        height: 345
+      alignment: 9
+      pivot: {x: 0.49836066, y: 0.5057971}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cd46c50b96b1694e9f5574eb81db6bc
+      internalID: 1443428771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: angelidlebubble2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 37
+        width: 306
+        height: 349
+      alignment: 9
+      pivot: {x: 0.49673203, y: 0.5028653}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 582f4ff7e42d77a4e865ead9bdefcc04
+      internalID: 1525317170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: angelidlebubble3
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 683
+        width: 306
+        height: 340
+      alignment: 9
+      pivot: {x: 0.50653595, y: 0.525}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a57b5944322b9b54e958bbac6facbe94
+      internalID: -1264882191
       vertices: []
       indices: 
       edges: []
@@ -882,42 +378,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      AngelFly2_0001: 294501693
-      AngelFly2_0003: 647863261
-      angel idle bubble_0006: -1870551612
-      angel idle bubble_0009: -663636613
-      angel idle_0005: 1437588472
-      angel idle bubble_0004: -780673842
-      angel idle bubble_0003: -1530004387
-      AngelFly1_0004: -1266648774
-      angel idle_0003: 1498847028
-      angel idle_0011: -1468121663
-      angel idle bubble_0010: 1168557810
-      angel idle bubble_0008: -634738095
-      angel idle_0002: 1980670619
-      angel idle bubble_0005: 766032457
-      angel idle_0006: -995286398
-      AngelFly1_0002: 15936732
-      angel idle_0001: 3466975
-      angel idle bubble_0007: 726342897
-      angel idle_0009: -50558790
-      angel idle bubble_0000: -1554484551
-      angel idle_0004: 363576673
-      angel idle bubble_0011: 1947984976
-      angel idle_0007: -1189879317
-      AngelFly1_0001: 375044392
-      angel idle_0008: 1416387226
-      AngelFly2_0005: -1718860830
-      AngelFly1_0005: -252847863
-      angel idle_0000: -2055674838
-      AngelFly2_0000: 289771754
-      angel idle_0010: 1493284176
-      angel idle bubble_0002: 866711436
-      AngelFly1_0000: -1326729399
-      angel idle bubble_0001: -1867149033
-      AngelFly2_0002: -2124688876
-      AngelFly2_0004: -746324347
-      AngelFly1_0003: 417969862
+      angelidle1: 2086977079
+      angelidlebubble3: -1264882191
+      angelidlebubble2: 1525317170
+      angelidle2: -1685037848
+      AngelFlyUp3: 1266132848
+      AngelFly3: 775437928
+      AngelFlyUp1: 1513548211
+      AngelFly1: -348320803
+      angelidlebubble1: 1443428771
+      angelidle3: -1902668496
+      AngelFly2: -1815202867
+      AngelFlyUp2: -1330988406
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
