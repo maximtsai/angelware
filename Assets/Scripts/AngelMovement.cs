@@ -8,6 +8,8 @@ public class AngelMovement : MonoBehaviour
     public float borderBuffer = 50f; // Buffer in pixels from the edges of the screen
     private Vector3 lastFewVelocity;
     private float startScale = 1f;
+    private DraggableItem file;
+    private Vector3 fileOffset;
 
     public Animator myAnim;
     bool hasFile = false;
@@ -15,7 +17,10 @@ public class AngelMovement : MonoBehaviour
     {
     	myAnim = GetComponent<Animator>();
     	lastFewVelocity = new Vector3(0, 0, 0);
+        fileOffset = new Vector3(0, 0, 0);
         startScale = transform.localScale.x;
+        DraggableItem.onPickUp += PickUpFile;
+        DraggableItem.onDrop += DropFile;
     }
 
     void Update()
@@ -39,6 +44,22 @@ public class AngelMovement : MonoBehaviour
     	Vector3 diff = transform.position - oldPos;
     	
     	updateVelocityAndAnim(diff);
+        if (file != null)
+        {
+            file.transform.position = transform.position + fileOffset;
+        }
+    }
+
+    void PickUpFile(DraggableItem newFile)
+    {
+        Debug.Log("Angel picked up");
+        file = newFile;
+    }
+
+    public void DropFile(DraggableItem newFile)
+    {
+        file.DropFile();
+        file = null;
     }
 
     private void updateVelocityAndAnim(Vector3 diff) {
@@ -64,19 +85,29 @@ public class AngelMovement : MonoBehaviour
             // Add 10 degrees to the Z-axis for clockwise rotation
             currentRotation.z = 0;
             transform.localScale = new Vector3(startScale, startScale, 1);
-            SwitchState("idle");
+            if (file != null)
+            {
+                fileOffset = new Vector3(0.15f, 0.4f, 0);
+                SwitchState("bubble");
+            }
+            else
+            {
+                SwitchState("idle");
+            }
         } else if (lastFewVelocity.y < 0) {
-            // flying up (I think)
+            // flying down (I think)
             if (flyAngleLeftRight < 0)
             {
-                Debug.Log(flyAngleLeftRight);
+                // Flying right
                 transform.localScale = new Vector3(startScale, startScale, 1);
                 currentRotation.z = (flyAngleLeftRight + 1.57f) * 25f;
+                fileOffset = new Vector3(0.05f, 0, 0);
             }
             else
             {
                 transform.localScale = new Vector3(-startScale, startScale, 1);
                 currentRotation.z = (flyAngleLeftRight - 1.57f) * 25f;
+                fileOffset = new Vector3(-0.05f, 0, 0);
             }
             SwitchState("flyup");
         } else if (lastFewVelocity.y > 0) {
@@ -85,11 +116,13 @@ public class AngelMovement : MonoBehaviour
             {
                 transform.localScale = new Vector3(startScale, startScale, 1);
                 currentRotation.z = (flyAngleLeftRight + 1.57f) * 25f;
+                fileOffset = new Vector3(0.05f, 0, 0);
             }
             else
             {
                 transform.localScale = new Vector3(-startScale, startScale, 1);
                 currentRotation.z = (flyAngleLeftRight - 1.57f) * 25f;
+                fileOffset = new Vector3(-0.05f, 0, 0);
             }
             SwitchState("flydown");
         }
@@ -101,12 +134,11 @@ public class AngelMovement : MonoBehaviour
 
         switch (nextState)
         {
+            case "bubble":
+                myAnim.Play("ang_idle_bubble");
+                break;
             case "idle":
-            	if (hasFile) {
-    			myAnim.Play("ang_idle_bubble");
-            	} else {
-    			myAnim.Play("ang_idle");
-            	}
+                myAnim.Play("ang_idle");
                 break;
             case "flyup":
     			myAnim.Play("ang_fly_up");

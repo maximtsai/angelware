@@ -6,10 +6,16 @@ using UnityEngine.EventSystems;
 public class DraggableItem : MonoBehaviour
 {
     public GameObject gameStateManager;
+    public GameObject angel;
     // Vector3 mousePositionOffset;
     public int folderIdx;
     private DropFolder currentDropArea;
     private Vector3 startPos;
+    public delegate void OnPickUp(DraggableItem file);
+    public static event OnPickUp onPickUp;
+    public delegate void OnDrop(DraggableItem file);
+    public static event OnDrop onDrop;
+
 
     Transform parentAfterDrag;
 
@@ -23,21 +29,31 @@ public class DraggableItem : MonoBehaviour
 
     private void OnMouseDown()
     {
-        // capture mouse offset pos
-        // mousePositionOffset = gameObject.transform.position - GetMouseWorldPosition();
+        // Fire event to angel to have her pick up file
+        onPickUp?.Invoke(this);
     }
 
     private void OnMouseUp()
+    {
+        Debug.Log("drop file");
+        onDrop?.Invoke(this);
+
+        DropFile();
+    }
+
+    public void DropFile()
     {
         transform.position = GetMouseWorldPosition(0);
         if (currentDropArea != null)
         {
             if (folderIdx == currentDropArea.folderIdx)
             {
-                if (gameStateManager != null) {
+                if (gameStateManager != null)
+                {
                     gameStateManager.GetComponent<GameStateManager>().IncreaseFileDropped();
                 }
-                else {
+                else
+                {
                     Debug.Log("ERROR: Set Game State Manager on file! File: " + name);
                 }
                 Destroy(gameObject);
@@ -47,13 +63,12 @@ public class DraggableItem : MonoBehaviour
                 StartCoroutine(InterpolateOverTime(transform.position, startPos, 0.36f));
             }
         }
-
     }
 
 
     private void OnMouseDrag()
     {
-        transform.position = GetMouseWorldPosition();
+        // transform.position = GetMouseWorldPosition();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
