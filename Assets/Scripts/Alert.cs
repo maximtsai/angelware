@@ -2,19 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems; 
 
 [RequireComponent(typeof(Image))]
 public class Alert : MonoBehaviour
+    , IPointerClickHandler
 {
     public Sprite idleSprite;
     public AnimationClip alertEnter;
-    public Sprite windowSprite;
+    public Sprite windowFirewallSprite;
+    public Sprite windowMalwareSprite;
+    public GameObject window;
+    public GameObject okButton;
+    public GameObject exclamation;
 
     private Image image;
-    private Animation animationComponent;
     private UISpritesAnimation uiSpritesAnimation;
-    private GameObject okButton;
-    private GameObject exclamation;
 
     private enum Phase { IDLE, WAITING, WINDOW }
     private Phase phase = Phase.IDLE;
@@ -27,17 +30,14 @@ public class Alert : MonoBehaviour
         if (idleSprite != null) {
             image.sprite = idleSprite;
         }
-        // image.color = new Color(1, 1, 1, 0);
-        
-        animationComponent = GetComponent<Animation>();
         
         uiSpritesAnimation = GetComponent<UISpritesAnimation>();
 
-        okButton = GameObject.Find("OKButton");
+        window.SetActive(false);
+
         okButton.SetActive(false);
         okButton.GetComponent<AlertOKButton>().enabled = false;
 
-        exclamation = GameObject.Find("Exclamation");
         exclamation.SetActive(false);
 
         phase = Phase.IDLE;
@@ -47,7 +47,7 @@ public class Alert : MonoBehaviour
     {
         if (phase == Phase.WAITING) {
             timer += Time.deltaTime;
-            if (timer > 1.0f) {
+            if (timer > 0.3f) {
                 timer = 0f;
                 if (exclamation.activeSelf) {
                     exclamation.SetActive(false);
@@ -62,19 +62,34 @@ public class Alert : MonoBehaviour
     public void TriggerAlert() {
         phase = Phase.WAITING;
         uiSpritesAnimation.currentSpriteSequence = 0;
+        uiSpritesAnimation.duration = 0.6f;
         uiSpritesAnimation.Play();
     }
 
-    void OnMouseDown() {
+    public void OnPointerClick(PointerEventData eventData)
+    {
         if (phase == Phase.WAITING) {
-            uiSpritesAnimation.Stop();
             phase = Phase.WINDOW;
-            image.sprite = windowSprite;
+
+            uiSpritesAnimation.Stop();
+            image.sprite = idleSprite;
+            
+            exclamation.SetActive(false);
+            window.SetActive(true);
             okButton.SetActive(true);
             okButton.GetComponent<AlertOKButton>().enabled = true;
         }
-        else if (phase == Phase.WINDOW) {
-            // do nothing
-        }
+    }
+
+    public void BackToIdle() {
+        phase = Phase.IDLE;
+
+        uiSpritesAnimation.Stop();
+        image.sprite = idleSprite;
+
+        window.SetActive(false);
+        okButton.SetActive(false);
+        okButton.GetComponent<AlertOKButton>().enabled = false;
+        exclamation.SetActive(false);
     }
 }
