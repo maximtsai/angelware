@@ -37,6 +37,7 @@ public class MinigamePopup : MonoBehaviour
             if (rng <= chanceToSpawn && numPopupsAlive < numMaxPopups)
             {
                 // Randomly select a prefab
+                // TODO: Update the random selection to match the final list of malware sprites
                 int randomPopupIndex = 8;
                 while (0 == randomPopupIndex % 8 || 6 == randomPopupIndex)
                 {
@@ -70,7 +71,7 @@ public class MinigamePopup : MonoBehaviour
                     popup.GetComponentInChildren<Popup>().orderHitboxes();
 
                     popup.gameObject.SetActive(true);
-                    numPopupsSpawned++;
+                    numPopupsSpawned = (numPopupsSpawned + 1) % 100; // Clamps the Z-index to the range [-0.99, 0]
                     numPopupsAlive++;
                     // Debug.Log("Total number of popups spawned: " + numPopupsSpawned);
                     // Debug.Log("Number of alive popups: " + numPopupsAlive);
@@ -90,6 +91,11 @@ public class MinigamePopup : MonoBehaviour
     {
         numPopupsAlive--;
         Debug.Log("Killed active popup. Remaining: " + numPopupsAlive);
+        // Reset the number of popups spawned if all popups closed to reset z-indexing
+        if (0 == numPopupsAlive)
+        {
+            numPopupsSpawned = 0;
+        }
     }
 
 }
