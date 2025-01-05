@@ -250,7 +250,7 @@ TextureImporter:
         width: 187
         height: 346
       alignment: 9
-      pivot: {x: 0.51604277, y: 0.5101156}
+      pivot: {x: 0.72192514, y: 0.5751445}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -266,12 +266,12 @@ TextureImporter:
       name: angelidle2
       rect:
         serializedVersion: 2
-        x: 1867
-        y: 326
-        width: 180
+        x: 1248
+        y: 678
+        width: 195
         height: 345
       alignment: 9
-      pivot: {x: 0.5361111, y: 0.51449275}
+      pivot: {x: 0.6923077, y: 0.5797101}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -292,7 +292,7 @@ TextureImporter:
         width: 189
         height: 337
       alignment: 9
-      pivot: {x: 0.5, y: 0.5148368}
+      pivot: {x: 0.7037037, y: 0.5816024}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

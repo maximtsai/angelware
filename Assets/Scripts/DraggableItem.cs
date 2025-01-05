@@ -6,7 +6,6 @@ using UnityEngine.EventSystems;
 public class DraggableItem : MonoBehaviour
 {
     public GameObject gameStateManager;
-    public GameObject angel;
     // Vector3 mousePositionOffset;
     public int folderIdx;
     private DropFolder currentDropArea;
@@ -35,7 +34,6 @@ public class DraggableItem : MonoBehaviour
 
     private void OnMouseUp()
     {
-        Debug.Log("drop file");
         onDrop?.Invoke(this);
 
         DropFile();
@@ -62,6 +60,9 @@ public class DraggableItem : MonoBehaviour
             {
                 StartCoroutine(InterpolateOverTime(transform.position, startPos, 0.36f));
             }
+        } else
+        {
+            StartCoroutine(InterpolateOverTime(transform.position, startPos, 0.36f));
         }
     }
 
@@ -90,6 +91,7 @@ public class DraggableItem : MonoBehaviour
     private IEnumerator InterpolateOverTime(Vector3 from, Vector3 to, float time)
     {
         float elapsedTime = 0f;
+        from.z = -6;
 
         while (elapsedTime < time)
         {

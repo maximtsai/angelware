@@ -513,7 +513,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameStateManager: {fileID: 1120627620}
-  angel: {fileID: 0}
   folderIdx: 1
 --- !u!212 &795348319
 SpriteRenderer:
@@ -662,7 +661,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameStateManager: {fileID: 1120627620}
-  angel: {fileID: 0}
   folderIdx: 1
 --- !u!212 &857689113
 SpriteRenderer:
@@ -1002,7 +1000,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameStateManager: {fileID: 1120627620}
-  angel: {fileID: 0}
   folderIdx: 1
 --- !u!212 &1124612200
 SpriteRenderer:
@@ -1151,7 +1148,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameStateManager: {fileID: 1120627620}
-  angel: {fileID: 0}
   folderIdx: 1
 --- !u!212 &1206813777
 SpriteRenderer:
@@ -1238,7 +1234,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7070509229149690287, guid: dc1275a6a6bc5c44a98ddba41d72d858, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7070509229149690287, guid: dc1275a6a6bc5c44a98ddba41d72d858, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1388,7 +1384,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1435211911
 GameObject:
@@ -1461,7 +1457,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.2, y: 1.2}
+  m_Size: {x: 1.5, y: 1.5}
   m_EdgeRadius: 0
 --- !u!212 &1435211915
 SpriteRenderer:
@@ -1732,7 +1728,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1551832215
 GameObject:
@@ -1829,7 +1825,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameStateManager: {fileID: 1120627620}
-  angel: {fileID: 0}
   folderIdx: 1
 --- !u!212 &1551832220
 SpriteRenderer:
@@ -1978,7 +1973,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameStateManager: {fileID: 1120627620}
-  angel: {fileID: 0}
   folderIdx: 1
 --- !u!212 &1589044231
 SpriteRenderer:
@@ -2103,7 +2097,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.2, y: 1.2}
+  m_Size: {x: 1.5, y: 1.5}
   m_EdgeRadius: 0
 --- !u!212 &1670079634
 SpriteRenderer:
@@ -2172,6 +2166,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5966203695313815683, guid: afe49385f944d464bad66c2a6a1ff888, type: 3}
+      propertyPath: m_Size.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5966203695313815683, guid: afe49385f944d464bad66c2a6a1ff888, type: 3}
+      propertyPath: m_Size.y
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8159730947315855682, guid: afe49385f944d464bad66c2a6a1ff888, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -2230,6 +2232,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8159730949261959555, guid: afe49385f944d464bad66c2a6a1ff888, type: 3}
       propertyPath: m_LocalPosition.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8159730949261959565, guid: afe49385f944d464bad66c2a6a1ff888, type: 3}
+      propertyPath: m_Size.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8159730949261959565, guid: afe49385f944d464bad66c2a6a1ff888, type: 3}
+      propertyPath: m_Size.y
       value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2328,7 +2338,7 @@ RectTransform:
   m_Children:
   - {fileID: 1464479279}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2430,7 +2440,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameStateManager: {fileID: 1120627620}
-  angel: {fileID: 0}
   folderIdx: 1
 --- !u!212 &1717469806
 SpriteRenderer:
@@ -2584,7 +2593,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameStateManager: {fileID: 1120627620}
-  angel: {fileID: 0}
   folderIdx: 1
 --- !u!212 &1924162539
 SpriteRenderer:
@@ -2733,7 +2741,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameStateManager: {fileID: 1120627620}
-  angel: {fileID: 0}
   folderIdx: 1
 --- !u!212 &1970934063
 SpriteRenderer:
@@ -2801,7 +2808,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2289942881888917562, guid: 1943e7aed39c00e4badb7ac1e5a86baf, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2289942881888917562, guid: 1943e7aed39c00e4badb7ac1e5a86baf, type: 3}
       propertyPath: m_LocalPosition.x

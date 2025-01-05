@@ -35,7 +35,7 @@ public class AngelMovement : MonoBehaviour
 
     	// convert to world pos
     	Vector3 mouseWorldPosition = mainCamera.ScreenToWorldPoint(mouseScreenPosition);
-        Vector3 mouseWorldPositionOffset = mouseWorldPosition + new Vector3(0.9f, -1.6f, 0.0f);
+        Vector3 mouseWorldPositionOffset = mouseWorldPosition + new Vector3(-0.1f, -0.3f, 0.0f);
 
     	Vector3 oldPos = transform.position;
 
@@ -52,13 +52,12 @@ public class AngelMovement : MonoBehaviour
 
     void PickUpFile(DraggableItem newFile)
     {
-        Debug.Log("Angel picked up");
         file = newFile;
     }
 
     public void DropFile(DraggableItem newFile)
     {
-        file.DropFile();
+        // file.DropFile();
         file = null;
     }
 
