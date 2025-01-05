@@ -5,13 +5,17 @@ using Unity.VisualScripting;
 using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Rendering.Universal;
 
-public class Popup : MonoBehaviour, IPointerDownHandler
+public class Popup : MonoBehaviour
 {
+    public GameObject parent;
+    public MinigamePopup minigameController;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        this.orderHitboxes();
     }
 
     // Update is called once per frame
@@ -20,33 +24,19 @@ public class Popup : MonoBehaviour, IPointerDownHandler
         
     }
 
-    public void OnPointerDown(PointerEventData eventData)
+    public void OnMouseDown()
     {
-        UnityEngine.Vector2 p = eventData.position;
-        Debug.Log("Mouse down: " + p);
+        minigameController.KillPopup();
+        Destroy(parent);
+    }
 
-        // Calculate the size of the popup on the screen
-        Camera c = Camera.main;
-        Renderer r = GetComponent<Renderer>();
-        UnityEngine.Vector2 min = c.WorldToScreenPoint(r.bounds.min);
-        UnityEngine.Vector2 max = c.WorldToScreenPoint(r.bounds.max);
-        UnityEngine.Vector2 size = max - min;
-        Debug.Log("Size: " + size);
-
-        // Get object location in screen units (px)
-        UnityEngine.Vector2 objPos = c.WorldToScreenPoint(transform.position);
-
-        // Determine top right corner
-        UnityEngine.Vector2 topRight = objPos + (size / 2);
-
-        // Check if the hitbox is the top right corner square and destroy object
-        const float HITBOX_WIDTH = 14.8225f;
-        UnityEngine.Vector2 HITBOX_VECTOR = topRight - new UnityEngine.Vector2(HITBOX_WIDTH, HITBOX_WIDTH);
-
-        if (p.x > HITBOX_VECTOR.x && p.y > HITBOX_VECTOR.y)
-        {
-            Debug.Log("X pressed");
-            Destroy(this.gameObject);
-        }
+    public void orderHitboxes()
+    {
+        UnityEngine.Vector3 pos = this.gameObject.transform.position;
+        this.gameObject.transform.position = new UnityEngine.Vector3(
+            pos.x,
+            pos.y,
+            parent.gameObject.transform.position.z - 0.0001f
+        );
     }
 }
