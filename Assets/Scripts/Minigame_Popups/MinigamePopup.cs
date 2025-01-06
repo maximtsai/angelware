@@ -65,7 +65,7 @@ public class MinigamePopup : MonoBehaviour
                         x = UnityEngine.Random.Range(0f, 1f);
                         y = UnityEngine.Random.Range(0f, 1f);
                         pos = c.ViewportToWorldPoint(new UnityEngine.Vector3(x, y, 0));
-                        popup.transform.position = new UnityEngine.Vector3(pos.x, pos.y, -1f *((float) numPopupsSpawned) / 100f);
+                        popup.transform.position = new UnityEngine.Vector3(pos.x, pos.y, -3f - ((float) numPopupsSpawned) / 100f);
 
                         UnityEngine.Vector2 button_pos = c.WorldToViewportPoint(new UnityEngine.Vector2(r.bounds.max.x, r.bounds.max.y));
                         // Debug.Log(button_pos.x + ", " + button_pos.y);
