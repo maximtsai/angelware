@@ -197,7 +197,7 @@ public class GameStateManager : MonoBehaviour
 
     void AddFirewallMinigame() {
         if (firewallMinigamePrefab != null) {
-            firewallInstance = Instantiate(firewallMinigamePrefab, new Vector3(5.3f, -1.6f, -1f), Quaternion.identity);
+            firewallInstance = Instantiate(firewallMinigamePrefab, new Vector3(5.3f, -1.5f, -1f), Quaternion.identity);
         }
     }
 
