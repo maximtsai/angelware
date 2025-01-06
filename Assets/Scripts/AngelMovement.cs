@@ -13,6 +13,7 @@ public class AngelMovement : MonoBehaviour
 
     public Animator myAnim;
     bool hasFile = false;
+    bool animationLocked = false;
     void Start()
     {
     	myAnim = GetComponent<Animator>();
@@ -39,9 +40,13 @@ public class AngelMovement : MonoBehaviour
 
     	Vector3 oldPos = transform.position;
 
-    	transform.position = new Vector3(mouseWorldPositionOffset.x * 0.03f + transform.position.x * 0.97f, mouseWorldPositionOffset.y * 0.03f + transform.position.y * 0.97f, -5f);
+        if (!animationLocked)
+        {
+            transform.position = new Vector3(mouseWorldPositionOffset.x * 0.03f + transform.position.x * 0.97f, mouseWorldPositionOffset.y * 0.03f + transform.position.y * 0.97f, -5f);
+        }
 
-    	Vector3 diff = transform.position - oldPos;
+
+        Vector3 diff = transform.position - oldPos;
     	
     	updateVelocityAndAnim(diff);
         if (file != null)
@@ -53,6 +58,7 @@ public class AngelMovement : MonoBehaviour
     void PickUpFile(DraggableItem newFile)
     {
         file = newFile;
+        SwitchState("pickup");
     }
 
     public void DropFile(DraggableItem newFile)
@@ -93,7 +99,10 @@ public class AngelMovement : MonoBehaviour
             {
                 SwitchState("idle");
             }
-        } else if (lastFewVelocity.y < 0) {
+        } else if (file == null) {
+            SwitchState("idle");
+        }
+        else if (lastFewVelocity.y < 0) {
             // flying down (I think)
             if (flyAngleLeftRight < 0)
             {
@@ -130,6 +139,11 @@ public class AngelMovement : MonoBehaviour
     }
 
     private void SwitchState(string nextState) {
+        if (animationLocked)
+        {
+            // We're playing an uninterruptible animation
+            return;
+        }
 
         switch (nextState)
         {
@@ -145,10 +159,27 @@ public class AngelMovement : MonoBehaviour
             case "flydown":
     			myAnim.Play("ang_fly_down");
                 break;
+            case "slap":
+                myAnim.Play("ang_slap");
+                animationLocked = true;
+                break;
+            case "pickup":
+                myAnim.Play("ang_pickup");
+                animationLocked = true;
+                break;
+            case "dunk":
+                myAnim.Play("ang_dunk");
+                animationLocked = true;
+                break;
             default:
     			myAnim.Play("ang_idle");
                 break;
         }
 
+    }
+
+    public void unlockAnimation()
+    {
+        animationLocked = false;
     }
 }
