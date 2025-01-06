@@ -44,7 +44,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -84,11 +84,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 1832
-        width: 101
-        height: 107
+        y: 401
+        width: 94
+        height: 110
       alignment: 9
-      pivot: {x: 0.5049505, y: 0.48598132}
+      pivot: {x: 0.4787234, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -105,11 +105,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 1614
-        width: 91
-        height: 108
+        y: 65
+        width: 88
+        height: 110
       alignment: 9
-      pivot: {x: 0.47252747, y: 0.49074075}
+      pivot: {x: 0.47727272, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -125,12 +125,12 @@ TextureImporter:
       name: school_catch 3
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1302
-        width: 89
-        height: 100
+        x: 91
+        y: 68
+        width: 86
+        height: 107
       alignment: 9
-      pivot: {x: 0.53932583, y: 0.51}
+      pivot: {x: 0.4883721, y: 0.5140187}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -146,12 +146,12 @@ TextureImporter:
       name: school_closed 1
       rect:
         serializedVersion: 2
-        x: 1
-        y: 993
-        width: 84
+        x: 184
+        y: 200
+        width: 86
         height: 98
       alignment: 9
-      pivot: {x: 0.52380955, y: 0.53061223}
+      pivot: {x: 0.4883721, y: 0.56122446}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -167,12 +167,12 @@ TextureImporter:
       name: school_closed 2
       rect:
         serializedVersion: 2
-        x: 2
-        y: 1404
-        width: 83
-        height: 106
+        x: 184
+        y: 300
+        width: 86
+        height: 103
       alignment: 9
-      pivot: {x: 0.4939759, y: 0.49056605}
+      pivot: {x: 0.4883721, y: 0.5339806}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -188,12 +188,12 @@ TextureImporter:
       name: school_closed 3
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1
-        width: 80
-        height: 91
+        x: 96
+        y: 186
+        width: 86
+        height: 105
       alignment: 9
-      pivot: {x: 0.4875, y: 0.5604396}
+      pivot: {x: 0.4883721, y: 0.52380955}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -209,12 +209,12 @@ TextureImporter:
       name: school_hover 1
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1194
-        width: 82
+        x: 96
+        y: 293
+        width: 86
         height: 106
       alignment: 9
-      pivot: {x: 0.5365854, y: 0.49056605}
+      pivot: {x: 0.4883721, y: 0.5188679}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -230,12 +230,12 @@ TextureImporter:
       name: school_hover 2
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1510
-        width: 87
-        height: 103
+        x: 179
+        y: 80
+        width: 86
+        height: 104
       alignment: 9
-      pivot: {x: 0.51724136, y: 0.5048544}
+      pivot: {x: 0.4883721, y: 0.52884614}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -251,12 +251,12 @@ TextureImporter:
       name: school_hover 3
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1093
-        width: 87
-        height: 99
+        x: 185
+        y: 409
+        width: 86
+        height: 102
       alignment: 9
-      pivot: {x: 0.50574714, y: 0.5151515}
+      pivot: {x: 0.4883721, y: 0.5392157}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -272,12 +272,12 @@ TextureImporter:
       name: school_reject 1
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1941
-        width: 104
+        x: 97
+        y: 405
+        width: 86
         height: 106
       alignment: 9
-      pivot: {x: 0.50961536, y: 0.49056605}
+      pivot: {x: 0.4883721, y: 0.5188679}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -294,11 +294,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 1724
-        width: 96
-        height: 106
+        y: 289
+        width: 93
+        height: 110
       alignment: 9
-      pivot: {x: 0.46875, y: 0.49056605}
+      pivot: {x: 0.4516129, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -315,11 +315,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 94
-        width: 81
-        height: 88
+        y: 177
+        width: 93
+        height: 110
       alignment: 9
-      pivot: {x: 0.50617284, y: 0.59090906}
+      pivot: {x: 0.4516129, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -327,6 +327,27 @@ TextureImporter:
       bones: []
       spriteID: e0409675a5a3a42448f5535f666cf56a
       internalID: -74588290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: school_reject 4
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 105
+        width: 86
+        height: 93
+      alignment: 9
+      pivot: {x: 0.4883721, y: 0.5913978}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f184340be4740be44b7c0862d8bae2a8
+      internalID: -1846688476
       vertices: []
       indices: 
       edges: []
@@ -343,6 +364,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       school_reject 3: -74588290
+      school_reject 4: -1846688476
       school_catch 1: -2116402182
       school_catch 3: -1485889453
       school_catch 2: 13084018

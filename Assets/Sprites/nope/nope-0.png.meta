@@ -44,7 +44,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -83,12 +83,12 @@ TextureImporter:
       name: nope_catch 1
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1951
-        width: 81
-        height: 96
+        x: 113
+        y: 406
+        width: 110
+        height: 105
       alignment: 9
-      pivot: {x: 0.5308642, y: 0.53125}
+      pivot: {x: 0.5, y: 0.52380955}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -105,11 +105,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 1760
-        width: 79
-        height: 95
+        y: 405
+        width: 110
+        height: 106
       alignment: 9
-      pivot: {x: 0.51898736, y: 0.5368421}
+      pivot: {x: 0.5, y: 0.5188679}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -125,12 +125,12 @@ TextureImporter:
       name: nope_catch 3
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1384
-        width: 78
-        height: 92
+        x: 225
+        y: 409
+        width: 110
+        height: 102
       alignment: 9
-      pivot: {x: 0.4871795, y: 0.5543478}
+      pivot: {x: 0.5, y: 0.5392157}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -146,12 +146,12 @@ TextureImporter:
       name: nope_closed 1
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1854
-        width: 80
-        height: 95
+        x: 337
+        y: 412
+        width: 110
+        height: 99
       alignment: 9
-      pivot: {x: 0.5125, y: 0.57894737}
+      pivot: {x: 0.5, y: 0.5555556}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -168,11 +168,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 1297
-        width: 80
-        height: 85
+        y: 306
+        width: 110
+        height: 97
       alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+      pivot: {x: 0.5, y: 0.5670103}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -189,11 +189,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 1121
-        width: 78
-        height: 86
+        y: 16
+        width: 110
+        height: 96
       alignment: 9
-      pivot: {x: 0.51282054, y: 0.59302324}
+      pivot: {x: 0.5, y: 0.5729167}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -209,12 +209,12 @@ TextureImporter:
       name: nope_closed 4
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1
-        width: 75
-        height: 83
+        x: 113
+        y: 208
+        width: 110
+        height: 96
       alignment: 9
-      pivot: {x: 0.49333334, y: 0.61445785}
+      pivot: {x: 0.5, y: 0.5729167}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -230,12 +230,12 @@ TextureImporter:
       name: nope_hover 1
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1209
-        width: 78
-        height: 86
+        x: 337
+        y: 213
+        width: 110
+        height: 97
       alignment: 9
-      pivot: {x: 0.5, y: 0.59302324}
+      pivot: {x: 0.5, y: 0.5670103}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -251,12 +251,12 @@ TextureImporter:
       name: nope_hover 2
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1034
-        width: 77
-        height: 85
+        x: 225
+        y: 210
+        width: 110
+        height: 97
       alignment: 9
-      pivot: {x: 0.5064935, y: 0.6}
+      pivot: {x: 0.5, y: 0.5670103}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -272,12 +272,12 @@ TextureImporter:
       name: nope_hover 3
       rect:
         serializedVersion: 2
-        x: 1
-        y: 947
-        width: 76
-        height: 85
+        x: 337
+        y: 312
+        width: 110
+        height: 98
       alignment: 9
-      pivot: {x: 0.5, y: 0.6}
+      pivot: {x: 0.5, y: 0.56122446}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -293,12 +293,12 @@ TextureImporter:
       name: nope_reject 1
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1665
-        width: 80
-        height: 93
+        x: 337
+        y: 114
+        width: 110
+        height: 97
       alignment: 9
-      pivot: {x: 0.5125, y: 0.5483871}
+      pivot: {x: 0.5, y: 0.5670103}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -314,12 +314,12 @@ TextureImporter:
       name: nope_reject 2
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1474
-        width: 78
-        height: 94
+        x: 225
+        y: 309
+        width: 110
+        height: 98
       alignment: 9
-      pivot: {x: 0.5, y: 0.5851064}
+      pivot: {x: 0.5, y: 0.56122446}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -335,12 +335,12 @@ TextureImporter:
       name: nope_reject 3
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1570
-        width: 79
-        height: 93
+        x: 113
+        y: 306
+        width: 110
+        height: 98
       alignment: 9
-      pivot: {x: 0.49367088, y: 0.5483871}
+      pivot: {x: 0.5, y: 0.56122446}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
