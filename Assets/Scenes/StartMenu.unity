@@ -698,7 +698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startupSound: {fileID: 8300000, guid: 012ddb1cb6217024c95815cc7ecf2513, type: 3}
-  startMenuBgm: {fileID: 8300000, guid: 3377366055e7d2b45aed1e2cb94005b2, type: 3}
+  startMenuBgm: {fileID: 8300000, guid: 640daea5d8cab0c49b5f247488d1a1b0, type: 3}
 --- !u!1 &879989326
 GameObject:
   m_ObjectHideFlags: 0
