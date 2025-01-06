@@ -30,7 +30,7 @@ public class FirewallMinigame : MonoBehaviour
     private float randomInterval;
     private float minTimeInterval = 1.2f;
     private float maxTimeInterval = 2f;
-    private const float MIN_TIME_INTERVAL_LOWER_LIMIT = 0.5f;
+    private const float MIN_TIME_INTERVAL_LOWER_LIMIT = 0.3f;
     private int level = 0;
     private int levelThresholdCount = 0;
     private const int LEVEL_THRESHOLD = 4;
