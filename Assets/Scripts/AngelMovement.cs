@@ -10,6 +10,7 @@ public class AngelMovement : MonoBehaviour
     private float startScale = 1f;
     private DraggableItem file;
     private Vector3 fileOffset;
+    private Vector3 goalPosition;
 
     public Animator myAnim;
     bool animationLocked = false; // playing animation and can't move
@@ -23,6 +24,7 @@ public class AngelMovement : MonoBehaviour
     {
     	myAnim = GetComponent<Animator>();
     	lastFewVelocity = new Vector3(0, 0, 0);
+        goalPosition = transform.position;
         fileOffset = new Vector3(0, 0, 0);
         startScale = transform.localScale.x;
         DraggableItem.onPickUp += PickUpFile;
@@ -31,7 +33,7 @@ public class AngelMovement : MonoBehaviour
         Popup.onClose += ClosePopup;
     }
 
-    void Update()
+    void FixedUpdate()
     {
     	// Get the mouse position in screen coordinates
     	Vector3 mouseScreenPosition = Input.mousePosition;
@@ -47,22 +49,26 @@ public class AngelMovement : MonoBehaviour
 
     	Vector3 oldPos = transform.position;
 
+        goalPosition = new Vector3(mouseWorldPositionOffset.x * 0.15f + transform.position.x * 0.85f, mouseWorldPositionOffset.y * 0.15f + transform.position.y * 0.85f, -5f);
+
+        Vector3 diff = transform.position - oldPos;
+    	
+    	updateVelocityAndAnim(diff);
+    }
+
+    private void Update()
+    {
         if (!animationLocked)
         {
-            transform.position = new Vector3(mouseWorldPositionOffset.x * 0.03f + transform.position.x * 0.97f, mouseWorldPositionOffset.y * 0.03f + transform.position.y * 0.97f, -5f);
+            transform.position = new Vector3(goalPosition.x * 0.5f + transform.position.x * 0.5f, goalPosition.y * 0.5f + transform.position.y * 0.5f, -5f);
             if (file != null)
             {
                 Vector3 newFilePos = transform.position + fileOffset;
                 newFilePos.z = -6f;
                 file.transform.position = newFilePos;
-                file.transform.localScale = file.transform.localScale * 0.95f + new Vector3(1, 1, 1) * 0.05f;
+                file.transform.localScale = file.transform.localScale * 0.9f + new Vector3(1, 1, 1) * 0.1f;
             }
         }
-
-
-        Vector3 diff = transform.position - oldPos;
-    	
-    	updateVelocityAndAnim(diff);
     }
 
     void PickUpFile(DraggableItem newFile)
@@ -96,7 +102,7 @@ public class AngelMovement : MonoBehaviour
     }
 
     private void updateVelocityAndAnim(Vector3 diff) {
-        lastFewVelocity = lastFewVelocity * 0.97f + diff * 0.03f;
+        lastFewVelocity = lastFewVelocity * 0.96f + diff * 0.04f;
         float xVel = lastFewVelocity.x;
         float flyAngle;
         if (Mathf.Abs(xVel) < 0.0001f)
