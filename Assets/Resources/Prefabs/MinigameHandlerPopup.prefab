@@ -56,5 +56,5 @@ MonoBehaviour:
   - {fileID: 1183607033951422792, guid: fe33ada8777eab347b2755515f81d2ce, type: 3}
   - {fileID: 6874525372452039656, guid: 9761c1b6c1bf3614f96a2af441c00302, type: 3}
   numMaxPopups: 10
-  intervalBetweenSpawns: 5
+  intervalBetweenSpawns: 1
   chanceToSpawn: 0.5
