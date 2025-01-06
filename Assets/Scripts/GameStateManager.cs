@@ -2,10 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEditor.SearchService;
-using UnityEditorInternal;
 using UnityEngine.SceneManagement;
-using System.Diagnostics.Tracing;
 
 public class GameStateManager : MonoBehaviour
 {

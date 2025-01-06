@@ -567,8 +567,9 @@ GameObject:
   - component: {fileID: 853279414}
   - component: {fileID: 853279413}
   - component: {fileID: 853279415}
+  - component: {fileID: 853279416}
   m_Layer: 0
-  m_Name: StartupAudio
+  m_Name: StartMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -699,6 +700,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startupSound: {fileID: 8300000, guid: 012ddb1cb6217024c95815cc7ecf2513, type: 3}
   startMenuBgm: {fileID: 8300000, guid: 640daea5d8cab0c49b5f247488d1a1b0, type: 3}
+--- !u!114 &853279416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853279412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edce8dd7e849812419b9103bd8b5c11b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &879989326
 GameObject:
   m_ObjectHideFlags: 0
@@ -1889,7 +1902,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2124139094}
         m_TargetAssemblyTypeName: QuitButton, Assembly-CSharp
-        m_MethodName: QuitButtonClicked
+        m_MethodName: QuitApplication
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
