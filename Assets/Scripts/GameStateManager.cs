@@ -84,7 +84,7 @@ public class GameStateManager : MonoBehaviour
             {
                 // Trigger game over (out of time)
                 Debug.Log("GameOver: Out of time");
-                StartCoroutine(GameOver("GameOver", 5f));      
+                StartCoroutine(GameOver("GameOver", 0.5f));      
                 gameOverTriggered = true;    
             }
             else if (firewallInstance && firewallInstance.GetComponentInChildren<FirewallMinigame>().isGameOver())
