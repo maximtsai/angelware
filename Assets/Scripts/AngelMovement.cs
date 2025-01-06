@@ -44,7 +44,9 @@ public class AngelMovement : MonoBehaviour
             transform.position = new Vector3(mouseWorldPositionOffset.x * 0.03f + transform.position.x * 0.97f, mouseWorldPositionOffset.y * 0.03f + transform.position.y * 0.97f, -5f);
             if (file != null)
             {
-                file.transform.position = transform.position + fileOffset;
+                Vector3 newFilePos = transform.position + fileOffset;
+                newFilePos.z = -6f;
+                file.transform.position = newFilePos;
                 file.transform.localScale = file.transform.localScale * 0.95f + new Vector3(1, 1, 1) * 0.05f;
             }
         }
