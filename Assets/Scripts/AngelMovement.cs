@@ -12,7 +12,7 @@ public class AngelMovement : MonoBehaviour
     private Vector3 fileOffset;
     private Vector3 goalPosition;
 
-    public Animator myAnim;
+    private Animator myAnim;
     bool animationLocked = false; // playing animation and can't move
     bool flyingLocked = false; // started flying so won't change animation for a moment
     string lastState = "idle";
@@ -23,6 +23,7 @@ public class AngelMovement : MonoBehaviour
     void Start()
     {
     	myAnim = GetComponent<Animator>();
+        Debug.Log("Anim name: " + myAnim.name);
     	lastFewVelocity = new Vector3(0, 0, 0);
         goalPosition = transform.position;
         fileOffset = new Vector3(0, 0, 0);
@@ -186,6 +187,9 @@ public class AngelMovement : MonoBehaviour
             return;
         }
 
+        if (myAnim == null) {
+            Debug.Log("ANIMATOR NULL");
+        }
         switch (nextState)
         {
             case "bubble":
