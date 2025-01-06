@@ -41,7 +41,7 @@ public class DraggableItem : MonoBehaviour
 
     public void DropFile()
     {
-        transform.position = GetMouseWorldPosition(0);
+        // transform.position = GetMouseWorldPosition(0);
         if (currentDropArea != null)
         {
             currentDropArea.GetComponent<DropFolder>().OnObjectDropped(gameObject);

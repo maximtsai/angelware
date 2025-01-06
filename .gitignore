@@ -8,7 +8,6 @@
 /[Bb]uild/
 /[Bb]uilds/
 /[Ll]ogs/
-/[Pp]ackages/
 /[Uu]ser[Ss]ettings/
 
 # MemoryCaptures can get excessive in size.
@@ -28,11 +27,6 @@
 .vs/
 .vsconfig/
 .vsconfig
-
-# Unity packages
-/[Pp]ackages/manifest.json
-/[Pp]ackages/packages-lock.json
-
 
 # Gradle cache directory
 .gradle/
