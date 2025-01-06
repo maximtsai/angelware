@@ -128,6 +128,8 @@ GameObject:
   - component: {fileID: 4446302484475896990}
   - component: {fileID: 4446302484475896988}
   - component: {fileID: 4446302484475896987}
+  - component: {fileID: 8772523462989926380}
+  - component: {fileID: 5838749912835723456}
   m_Layer: 5
   m_Name: PauseMenuButton
   m_TagString: Untagged
@@ -266,6 +268,46 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   m_IsOn: 0
+--- !u!114 &8772523462989926380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4446302484475896961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86fcc159d06937d45aa09a2a496b0916, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 0.5
+  playOnAwake: 0
+  loop: 1
+  currentSpriteSequence: 0
+  spriteSequences:
+  - myList:
+    - {fileID: 21300000, guid: b2d871688beb88c4798a6c424a22f07d, type: 3}
+    - {fileID: 21300000, guid: 77ec22b8a8598c942821b15b0d72a07c, type: 3}
+    - {fileID: 21300000, guid: 1eac7605a4e8eb34785797a0a71c7c1f, type: 3}
+    - {fileID: 21300000, guid: 760182d6389e2cf4785065038f666bf1, type: 3}
+    - {fileID: 21300000, guid: b4da5f1b635f5b843a7dd2bb1fd7d9b2, type: 3}
+    - {fileID: 21300000, guid: b2d871688beb88c4798a6c424a22f07d, type: 3}
+    - {fileID: 21300000, guid: b2d871688beb88c4798a6c424a22f07d, type: 3}
+    - {fileID: 21300000, guid: b2d871688beb88c4798a6c424a22f07d, type: 3}
+    - {fileID: 21300000, guid: b2d871688beb88c4798a6c424a22f07d, type: 3}
+--- !u!114 &5838749912835723456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4446302484475896961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07eb3fb87ba30f942942a9c4948fbe20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startButtonDefaultSprite: {fileID: 21300000, guid: 9a1aca15b09bc5a479980a12e957dbc9, type: 3}
 --- !u!1 &4446302485142952529
 GameObject:
   m_ObjectHideFlags: 0
