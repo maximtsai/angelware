@@ -43,26 +43,31 @@ public class AngelMovement : MonoBehaviour
         if (!animationLocked)
         {
             transform.position = new Vector3(mouseWorldPositionOffset.x * 0.03f + transform.position.x * 0.97f, mouseWorldPositionOffset.y * 0.03f + transform.position.y * 0.97f, -5f);
+            if (file != null)
+            {
+                file.transform.position = transform.position + fileOffset;
+                file.transform.localScale = file.transform.localScale * 0.95f + new Vector3(1, 1, 1) * 0.05f;
+            }
         }
 
 
         Vector3 diff = transform.position - oldPos;
     	
     	updateVelocityAndAnim(diff);
-        if (file != null)
-        {
-            file.transform.position = transform.position + fileOffset;
-        }
     }
 
     void PickUpFile(DraggableItem newFile)
     {
         file = newFile;
+        file.transform.position = new Vector3(0, 0, -99f); // temporarily hide this
+        file.transform.localScale = new Vector3(0.3f, 0.3f, 1);
         SwitchState("pickup");
     }
 
     public void DropFile(DraggableItem newFile)
     {
+        file.transform.position = transform.position + fileOffset;
+        file.transform.localScale = new Vector3(1, 1, 1);
         // file.DropFile();
         file = null;
     }
@@ -124,13 +129,13 @@ public class AngelMovement : MonoBehaviour
             {
                 transform.localScale = new Vector3(startScale, startScale, 1);
                 currentRotation.z = (flyAngleLeftRight + 1.57f) * 25f;
-                fileOffset = new Vector3(0.05f, 0, 0);
+                fileOffset = new Vector3(0.065f, 0.066f, 0);
             }
             else
             {
                 transform.localScale = new Vector3(-startScale, startScale, 1);
                 currentRotation.z = (flyAngleLeftRight - 1.57f) * 25f;
-                fileOffset = new Vector3(-0.05f, 0, 0);
+                fileOffset = new Vector3(-0.065f, 0.066f, 0);
             }
             SwitchState("flydown");
         }

@@ -44,7 +44,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -119,12 +119,12 @@ TextureImporter:
       name: AngelFly1
       rect:
         serializedVersion: 2
-        x: 636
-        y: 1538
-        width: 492
-        height: 234
+        x: 986
+        y: 1817
+        width: 490
+        height: 231
       alignment: 9
-      pivot: {x: 0.82723576, y: 0.3931624}
+      pivot: {x: 0.83061224, y: 0.38528138}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -140,12 +140,12 @@ TextureImporter:
       name: AngelFly2
       rect:
         serializedVersion: 2
-        x: 204
-        y: 1553
-        width: 497
-        height: 236
+        x: 1476
+        y: 1611
+        width: 489
+        height: 224
       alignment: 9
-      pivot: {x: 0.832998, y: 0.3898305}
+      pivot: {x: 0.83435583, y: 0.38839287}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -161,12 +161,12 @@ TextureImporter:
       name: AngelFly3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1386
-        width: 501
-        height: 243
+        x: 494
+        y: 1809
+        width: 492
+        height: 239
       alignment: 9
-      pivot: {x: 0.8143712, y: 0.39506173}
+      pivot: {x: 0.8292683, y: 0.38493723}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -182,12 +182,12 @@ TextureImporter:
       name: AngelFlyUp1
       rect:
         serializedVersion: 2
-        x: 1235
-        y: 1586
-        width: 498
-        height: 222
+        x: 0
+        y: 1626
+        width: 492
+        height: 209
       alignment: 9
-      pivot: {x: 0.82530123, y: 0.5945946}
+      pivot: {x: 0.83536583, y: 0.6076555}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -203,12 +203,12 @@ TextureImporter:
       name: AngelFlyUp2
       rect:
         serializedVersion: 2
-        x: 1550
-        y: 1823
-        width: 498
-        height: 225
+        x: 1476
+        y: 1835
+        width: 490
+        height: 213
       alignment: 9
-      pivot: {x: 0.8293173, y: 0.5911111}
+      pivot: {x: 0.8387755, y: 0.600939}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -224,12 +224,12 @@ TextureImporter:
       name: AngelFlyUp3
       rect:
         serializedVersion: 2
-        x: 318
-        y: 1832
-        width: 496
-        height: 216
+        x: 0
+        y: 1835
+        width: 494
+        height: 213
       alignment: 9
-      pivot: {x: 0.83870965, y: 0.6157407}
+      pivot: {x: 0.8380567, y: 0.6197183}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -245,12 +245,12 @@ TextureImporter:
       name: angelidle1
       rect:
         serializedVersion: 2
-        x: 997
-        y: 349
-        width: 187
-        height: 346
+        x: 788
+        y: 1163
+        width: 176
+        height: 336
       alignment: 9
-      pivot: {x: 0.72192514, y: 0.5751445}
+      pivot: {x: 0.73295456, y: 0.5625}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -266,12 +266,12 @@ TextureImporter:
       name: angelidle2
       rect:
         serializedVersion: 2
-        x: 832
-        y: 310
-        width: 195
-        height: 345
+        x: 296
+        y: 965
+        width: 173
+        height: 335
       alignment: 9
-      pivot: {x: 0.6923077, y: 0.5797101}
+      pivot: {x: 0.7398844, y: 0.5671642}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -287,12 +287,12 @@ TextureImporter:
       name: angelidle3
       rect:
         serializedVersion: 2
-        x: 709
-        y: 73
-        width: 189
-        height: 337
+        x: 296
+        y: 1300
+        width: 175
+        height: 326
       alignment: 9
-      pivot: {x: 0.7037037, y: 0.5816024}
+      pivot: {x: 0.74285716, y: 0.5674847}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -308,12 +308,12 @@ TextureImporter:
       name: angelidlebubble1
       rect:
         serializedVersion: 2
-        x: 1401
-        y: 1080
-        width: 310
-        height: 345
+        x: 471
+        y: 1124
+        width: 294
+        height: 344
       alignment: 9
-      pivot: {x: 0.66451615, y: 0.6347826}
+      pivot: {x: 0.67346936, y: 0.63372093}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -329,12 +329,12 @@ TextureImporter:
       name: angelidlebubble2
       rect:
         serializedVersion: 2
-        x: 1277
-        y: 1258
-        width: 311
-        height: 349
+        x: 0
+        y: 955
+        width: 294
+        height: 340
       alignment: 9
-      pivot: {x: 0.66237944, y: 0.63037246}
+      pivot: {x: 0.670068, y: 0.64411765}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -350,12 +350,12 @@ TextureImporter:
       name: angelidlebubble3
       rect:
         serializedVersion: 2
-        x: 929
-        y: 1137
-        width: 306
-        height: 340
+        x: 0
+        y: 1295
+        width: 296
+        height: 331
       alignment: 9
-      pivot: {x: 0.6830065, y: 0.65588236}
+      pivot: {x: 0.6722973, y: 0.6465257}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -371,12 +371,12 @@ TextureImporter:
       name: file bubble_0001
       rect:
         serializedVersion: 2
-        x: 1268
-        y: 513
-        width: 215
-        height: 310
+        x: 1257
+        y: 1167
+        width: 208
+        height: 301
       alignment: 9
-      pivot: {x: 1.0395349, y: 0.66129035}
+      pivot: {x: 1.0456731, y: 0.6511628}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -392,12 +392,12 @@ TextureImporter:
       name: file bubble_0002
       rect:
         serializedVersion: 2
-        x: 1793
-        y: 475
-        width: 255
-        height: 360
+        x: 1716
+        y: 621
+        width: 249
+        height: 354
       alignment: 9
-      pivot: {x: 0.97843134, y: 0.51944447}
+      pivot: {x: 0.97791165, y: 0.51129943}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -413,12 +413,12 @@ TextureImporter:
       name: file bubble_0003
       rect:
         serializedVersion: 2
-        x: 1789
-        y: 909
-        width: 259
-        height: 372
+        x: 1465
+        y: 843
+        width: 251
+        height: 364
       alignment: 9
-      pivot: {x: 0.96718144, y: 0.49731183}
+      pivot: {x: 0.9860558, y: 0.49175823}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -434,12 +434,12 @@ TextureImporter:
       name: file bubble_0004
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 289
-        height: 338
+        x: 1764
+        y: 1279
+        width: 282
+        height: 332
       alignment: 9
-      pivot: {x: 0.88062286, y: 0.5295858}
+      pivot: {x: 0.891844, y: 0.5301205}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -455,12 +455,12 @@ TextureImporter:
       name: file bubble_0005
       rect:
         serializedVersion: 2
-        x: 272
-        y: 900
-        width: 293
-        height: 311
+        x: 1764
+        y: 975
+        width: 280
+        height: 304
       alignment: 9
-      pivot: {x: 0.8549488, y: 0.65273315}
+      pivot: {x: 0.8625, y: 0.6480263}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -476,12 +476,12 @@ TextureImporter:
       name: file bubble_0006
       rect:
         serializedVersion: 2
-        x: 455
-        y: 0
-        width: 238
-        height: 286
+        x: 703
+        y: 847
+        width: 226
+        height: 277
       alignment: 9
-      pivot: {x: 0.960084, y: 0.63986015}
+      pivot: {x: 0.9756637, y: 0.6534296}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -497,12 +497,12 @@ TextureImporter:
       name: file bubble_0007
       rect:
         serializedVersion: 2
-        x: 664
-        y: 403
-        width: 187
-        height: 353
+        x: 1288
+        y: 1483
+        width: 183
+        height: 334
       alignment: 9
-      pivot: {x: 1.0989305, y: 0.6458923}
+      pivot: {x: 1.1120218, y: 0.6526946}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -518,12 +518,12 @@ TextureImporter:
       name: file bubble_0008
       rect:
         serializedVersion: 2
-        x: 1608
-        y: 745
-        width: 255
-        height: 352
+        x: 469
+        y: 779
+        width: 234
+        height: 345
       alignment: 9
-      pivot: {x: 0.8490196, y: 0.65909094}
+      pivot: {x: 0.8611111, y: 0.65217394}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -539,12 +539,12 @@ TextureImporter:
       name: file bubble_0009
       rect:
         serializedVersion: 2
-        x: 135
-        y: 1049
-        width: 311
-        height: 358
+        x: 986
+        y: 1468
+        width: 302
+        height: 349
       alignment: 9
-      pivot: {x: 0.6768489, y: 0.6564246}
+      pivot: {x: 0.68046355, y: 0.6475645}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -560,12 +560,12 @@ TextureImporter:
       name: file bubble_0010
       rect:
         serializedVersion: 2
-        x: 1743
-        y: 1178
-        width: 305
-        height: 347
+        x: 492
+        y: 1468
+        width: 296
+        height: 341
       alignment: 9
-      pivot: {x: 0.6803279, y: 0.6628242}
+      pivot: {x: 0.6706081, y: 0.6568915}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -578,918 +578,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dunk-dunk_0000
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 849
-        width: 233
-        height: 315
-      alignment: 9
-      pivot: {x: 0.9034335, y: 0.60952383}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b9916fcf2f4421248965660cb3edcc11
-      internalID: 683542822
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0001
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 849
-        width: 233
-        height: 315
-      alignment: 9
-      pivot: {x: 0.9034335, y: 0.60952383}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 661773a336e2eff46ba9d60f00612429
-      internalID: 2037626323
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0002
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 849
-        width: 233
-        height: 315
-      alignment: 9
-      pivot: {x: 0.9034335, y: 0.60952383}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8ae126cb020979548aaba3f257129794
-      internalID: 1076235477
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0003
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 536
-        width: 229
-        height: 315
-      alignment: 9
-      pivot: {x: 0.91484714, y: 0.60952383}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ea339478412679044a4c71d7fbd575e5
-      internalID: 995325145
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0004
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 536
-        width: 229
-        height: 315
-      alignment: 9
-      pivot: {x: 0.91484714, y: 0.60952383}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2f385913bbae8f9498f8a46c75ebb2f3
-      internalID: -1345089293
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0005
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 536
-        width: 229
-        height: 315
-      alignment: 9
-      pivot: {x: 0.91484714, y: 0.60952383}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 50b06305e00269f49b614253b8fb1b98
-      internalID: 334678777
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0006
-      rect:
-        serializedVersion: 2
-        x: 450
-        y: 498
-        width: 236
-        height: 314
-      alignment: 9
-      pivot: {x: 0.8877119, y: 0.611465}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dd3312b1a74b06948b35f6fdfb1a27e2
-      internalID: -1966139284
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0007
-      rect:
-        serializedVersion: 2
-        x: 450
-        y: 498
-        width: 236
-        height: 314
-      alignment: 9
-      pivot: {x: 0.8877119, y: 0.611465}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 001b610888a4db248aac84bb4b01636d
-      internalID: -1087447308
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0008
-      rect:
-        serializedVersion: 2
-        x: 1059
-        y: 1026
-        width: 286
-        height: 287
-      alignment: 9
-      pivot: {x: 0.9318182, y: 0.65505224}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 52b48ad611af00e43adf3a507d6052aa
-      internalID: -499574368
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0009
-      rect:
-        serializedVersion: 2
-        x: 560
-        y: 982
-        width: 269
-        height: 287
-      alignment: 9
-      pivot: {x: 0.9907063, y: 0.65505224}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 99f63f750a9121c428d28f93df6fcccc
-      internalID: -179594438
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0010
-      rect:
-        serializedVersion: 2
-        x: 560
-        y: 982
-        width: 269
-        height: 287
-      alignment: 9
-      pivot: {x: 0.9907063, y: 0.65505224}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: be134d4565a1fd447913bcc44091069a
-      internalID: -325229490
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0011
-      rect:
-        serializedVersion: 2
-        x: 560
-        y: 982
-        width: 269
-        height: 287
-      alignment: 9
-      pivot: {x: 0.9907063, y: 0.65505224}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0b23c98279b93c9419e71ab76abb427f
-      internalID: 1030344836
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0012
-      rect:
-        serializedVersion: 2
-        x: 560
-        y: 982
-        width: 269
-        height: 287
-      alignment: 9
-      pivot: {x: 0.9907063, y: 0.65505224}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca8ce5d3c03ef274baf3f85ea02cf80e
-      internalID: -277629675
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0013
-      rect:
-        serializedVersion: 2
-        x: 1450
-        y: 198
-        width: 269
-        height: 285
-      alignment: 9
-      pivot: {x: 0.9981413, y: 0.65964913}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0bc6ace79a00f11469d32bfd8379ef9a
-      internalID: 502781391
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0014
-      rect:
-        serializedVersion: 2
-        x: 1450
-        y: 198
-        width: 269
-        height: 285
-      alignment: 9
-      pivot: {x: 0.9981413, y: 0.65964913}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6b26dcb8a189f1a40af5565175946bab
-      internalID: 1575487155
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0015
-      rect:
-        serializedVersion: 2
-        x: 1384
-        y: 788
-        width: 270
-        height: 299
-      alignment: 9
-      pivot: {x: 0.99444443, y: 0.62876254}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 64d8c7dd7c483f94786731dc8301f49c
-      internalID: -1428489166
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0016
-      rect:
-        serializedVersion: 2
-        x: 1384
-        y: 788
-        width: 270
-        height: 299
-      alignment: 9
-      pivot: {x: 0.99444443, y: 0.62876254}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 484ec95de897be445b35f47db91b689b
-      internalID: 1611949696
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0017
-      rect:
-        serializedVersion: 2
-        x: 1384
-        y: 788
-        width: 270
-        height: 299
-      alignment: 9
-      pivot: {x: 0.99444443, y: 0.62876254}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7bde13af34b2bab4796e3b8ef7eb23d9
-      internalID: 1513399692
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0018
-      rect:
-        serializedVersion: 2
-        x: 1384
-        y: 788
-        width: 270
-        height: 299
-      alignment: 9
-      pivot: {x: 0.99444443, y: 0.62876254}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d64cbfde305d8b449b1fdcbbba1fddcd
-      internalID: 1137318100
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0019
-      rect:
-        serializedVersion: 2
-        x: 945
-        y: 669
-        width: 225
-        height: 294
-      alignment: 9
-      pivot: {x: 0.9266667, y: 0.6360544}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 06a2e50cc1340d44796917abfd6e67d0
-      internalID: -1043030848
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0020
-      rect:
-        serializedVersion: 2
-        x: 945
-        y: 669
-        width: 225
-        height: 294
-      alignment: 9
-      pivot: {x: 0.9266667, y: 0.6360544}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c343ca332c630d94ca967854f5d20953
-      internalID: 1322873933
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0021
-      rect:
-        serializedVersion: 2
-        x: 945
-        y: 669
-        width: 225
-        height: 294
-      alignment: 9
-      pivot: {x: 0.9266667, y: 0.6360544}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d51b91a4c598f4f499e1203980116690
-      internalID: 1515019728
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0022
-      rect:
-        serializedVersion: 2
-        x: 1292
-        y: 1755
-        width: 273
-        height: 293
-      alignment: 9
-      pivot: {x: 0.8260073, y: 0.6587031}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 530b5bb6f063a734f8305ec725dd7a30
-      internalID: -983303097
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0023
-      rect:
-        serializedVersion: 2
-        x: 1292
-        y: 1755
-        width: 273
-        height: 293
-      alignment: 9
-      pivot: {x: 0.8260073, y: 0.6587031}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7da54a5a2c6a6bb429fb32535df0f046
-      internalID: 1871436430
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0024
-      rect:
-        serializedVersion: 2
-        x: 1208
-        y: 757
-        width: 230
-        height: 298
-      alignment: 9
-      pivot: {x: 0.8847826, y: 0.6510067}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6961c567983dd8c4ca3897efd6ed1c10
-      internalID: -587609162
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0025
-      rect:
-        serializedVersion: 2
-        x: 1208
-        y: 757
-        width: 230
-        height: 298
-      alignment: 9
-      pivot: {x: 0.8847826, y: 0.6510067}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f4316e8cdace86c4f86a88ac9c6fb4dc
-      internalID: 1928988748
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0026
-      rect:
-        serializedVersion: 2
-        x: 1208
-        y: 757
-        width: 230
-        height: 298
-      alignment: 9
-      pivot: {x: 0.8847826, y: 0.6510067}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a8d2cf0f654b80547a44918b1f510255
-      internalID: 1324532982
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0027
-      rect:
-        serializedVersion: 2
-        x: 1605
-        y: 461
-        width: 230
-        height: 297
-      alignment: 9
-      pivot: {x: 0.8847826, y: 0.64983165}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f517d67379a21dd45802f29bc14709d5
-      internalID: 1975093281
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0028
-      rect:
-        serializedVersion: 2
-        x: 232
-        y: 355
-        width: 279
-        height: 289
-      alignment: 9
-      pivot: {x: 0.63261646, y: 0.66435987}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f49aa696b9522f7469347b0c04ba0162
-      internalID: 1970498198
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0029
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 296
-        width: 279
-        height: 289
-      alignment: 9
-      pivot: {x: 0.63261646, y: 0.66435987}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 410c79e19a6425b448b6d7e14d649937
-      internalID: -1397659331
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0030
-      rect:
-        serializedVersion: 2
-        x: 443
-        y: 278
-        width: 285
-        height: 268
-      alignment: 9
-      pivot: {x: 0.6192982, y: 0.7164179}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a7d5038ebda892e4c9d7e1667ed8e0c5
-      internalID: -539897262
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0031
-      rect:
-        serializedVersion: 2
-        x: 443
-        y: 278
-        width: 285
-        height: 268
-      alignment: 9
-      pivot: {x: 0.6192982, y: 0.7164179}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 22c6adc0cc682544d81017b019320a4b
-      internalID: 1633681606
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0032
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 1659
-        width: 310
-        height: 389
-      alignment: 9
-      pivot: {x: 0.43709677, y: 0.5012854}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 940c2b9091c0b804d9d5fd0ac64d4b76
-      internalID: 1544138177
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0033
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 1659
-        width: 310
-        height: 389
-      alignment: 9
-      pivot: {x: 0.43709677, y: 0.5012854}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cc0c2b6a84bd4ed4185a51d6f45dcbcd
-      internalID: 2103137294
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0034
-      rect:
-        serializedVersion: 2
-        x: 637
-        y: 1212
-        width: 376
-        height: 328
-      alignment: 9
-      pivot: {x: 0.39228722, y: 0.5945122}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4ec2da82f5c642a4693893561d08d22a
-      internalID: 2009919188
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0035
-      rect:
-        serializedVersion: 2
-        x: 637
-        y: 1212
-        width: 376
-        height: 328
-      alignment: 9
-      pivot: {x: 0.39228722, y: 0.5945122}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 111b7a06887fe944e8400a01f1c830db
-      internalID: -149806132
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0036
-      rect:
-        serializedVersion: 2
-        x: 1689
-        y: 241
-        width: 359
-        height: 261
-      alignment: 9
-      pivot: {x: 0.41086352, y: 0.74712646}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0a76e177a1e93a44aaefe985147bd004
-      internalID: 1679229753
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0037
-      rect:
-        serializedVersion: 2
-        x: 1689
-        y: 241
-        width: 359
-        height: 261
-      alignment: 9
-      pivot: {x: 0.41086352, y: 0.74712646}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f7a0fc47e642cbe4d8813884f22f12e9
-      internalID: 1739888971
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0038
-      rect:
-        serializedVersion: 2
-        x: 1684
-        y: 0
-        width: 364
-        height: 261
-      alignment: 9
-      pivot: {x: 0.4052198, y: 0.74712646}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5065f58e98b4e4a438b7e4514d1f3808
-      internalID: -1697244805
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0039
-      rect:
-        serializedVersion: 2
-        x: 1642
-        y: 1520
-        width: 406
-        height: 314
-      alignment: 9
-      pivot: {x: 0.46674877, y: 0.6624204}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 663a101985335274b9b4a11fd995cb06
-      internalID: 1473689148
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0040
-      rect:
-        serializedVersion: 2
-        x: 730
-        y: 1734
-        width: 259
-        height: 314
-      alignment: 9
-      pivot: {x: 0.73166025, y: 0.6624204}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9fd4503825f52c44dad8ee557c91b2a3
-      internalID: -2013344215
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0041
-      rect:
-        serializedVersion: 2
-        x: 837
-        y: 877
-        width: 182
-        height: 340
-      alignment: 9
-      pivot: {x: 0.8214286, y: 0.6617647}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a0364f70b63fac147b7eff27cdf3cb7e
-      internalID: 892524710
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dunk-dunk_0042
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 583
-        width: 200
-        height: 346
-      alignment: 9
-      pivot: {x: 0.7875, y: 0.6242775}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6d253fc80d4af10418ff5adeac28ce76
-      internalID: -912278399
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: slap-slap_0000
       rect:
         serializedVersion: 2
-        x: 258
-        y: 0
-        width: 226
-        height: 320
+        x: 788
+        y: 1499
+        width: 197
+        height: 310
       alignment: 9
-      pivot: {x: 1.0309734, y: 0.95625}
+      pivot: {x: 1.0558375, y: 0.9645161}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1505,12 +602,12 @@ TextureImporter:
       name: slap-slap_0002
       rect:
         serializedVersion: 2
-        x: 442
-        y: 1212
-        width: 318
-        height: 411
+        x: 964
+        y: 1072
+        width: 293
+        height: 396
       alignment: 9
-      pivot: {x: 0.7106918, y: 0.74452555}
+      pivot: {x: 0.68600684, y: 0.7550505}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1526,12 +623,12 @@ TextureImporter:
       name: slap-slap_0004
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1601
-        width: 318
-        height: 447
+        x: 1471
+        y: 1207
+        width: 293
+        height: 404
       alignment: 9
-      pivot: {x: 0.7389937, y: 0.68456376}
+      pivot: {x: 0.71672356, y: 0.740099}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1555,73 +652,30 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       file bubble_0007: -232299720
-      dunk-dunk_0013: 502781391
-      dunk-dunk_0021: 1515019728
-      dunk-dunk_0033: 2103137294
       slap-slap_0002: -2137470210
-      dunk-dunk_0020: 1322873933
+      angelidle1: 2086977079
+      file bubble_0008: -716523437
       file bubble_0004: -700378403
       slap-slap_0004: 930792504
       file bubble_0005: -1780293972
-      dunk-dunk_0034: 2009919188
-      file bubble_0010: -1343236998
-      dunk-dunk_0022: -983303097
       slap-slap_0000: -1576550778
-      dunk-dunk_0040: -2013344215
+      angelidlebubble3: -1264882191
       angelidlebubble2: 1525317170
-      dunk-dunk_0031: 1633681606
-      dunk-dunk_0012: -277629675
+      angelidle2: -1685037848
       AngelFlyUp3: 1266132848
       AngelFly3: 775437928
       file bubble_0002: -1400024460
       AngelFlyUp1: 1513548211
-      file bubble_0003: -1257619002
-      dunk-dunk_0005: 334678777
-      file bubble_0001: -555847236
-      dunk-dunk_0017: 1513399692
-      dunk-dunk_0028: 1970498198
-      dunk-dunk_0032: 1544138177
-      dunk-dunk_0036: 1679229753
-      file bubble_0009: 1954606337
-      file bubble_0006: 556014024
-      dunk-dunk_0035: -149806132
-      dunk-dunk_0037: 1739888971
-      dunk-dunk_0042: -912278399
-      angelidle1: 2086977079
-      dunk-dunk_0000: 683542822
-      file bubble_0008: -716523437
-      dunk-dunk_0002: 1076235477
-      angelidlebubble3: -1264882191
-      dunk-dunk_0014: 1575487155
-      dunk-dunk_0004: -1345089293
-      dunk-dunk_0039: 1473689148
-      dunk-dunk_0007: -1087447308
-      dunk-dunk_0030: -539897262
-      angelidle2: -1685037848
-      dunk-dunk_0016: 1611949696
-      dunk-dunk_0019: -1043030848
-      dunk-dunk_0003: 995325145
       AngelFly1: -348320803
-      dunk-dunk_0009: -179594438
-      dunk-dunk_0023: 1871436430
-      dunk-dunk_0025: 1928988748
+      file bubble_0010: -1343236998
+      file bubble_0003: -1257619002
       angelidlebubble1: 1443428771
       angelidle3: -1902668496
-      dunk-dunk_0029: -1397659331
       AngelFly2: -1815202867
-      dunk-dunk_0010: -325229490
-      dunk-dunk_0011: 1030344836
-      dunk-dunk_0015: -1428489166
-      dunk-dunk_0006: -1966139284
-      dunk-dunk_0038: -1697244805
+      file bubble_0001: -555847236
       AngelFlyUp2: -1330988406
-      dunk-dunk_0018: 1137318100
-      dunk-dunk_0041: 892524710
-      dunk-dunk_0024: -587609162
-      dunk-dunk_0001: 2037626323
-      dunk-dunk_0026: 1324532982
-      dunk-dunk_0008: -499574368
-      dunk-dunk_0027: 1975093281
+      file bubble_0009: 1954606337
+      file bubble_0006: 556014024
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
