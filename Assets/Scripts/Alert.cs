@@ -15,9 +15,12 @@ public class Alert : MonoBehaviour
     public GameObject window;
     public GameObject okButton;
     public GameObject exclamation;
+    public AudioClip notificationSound;
+    public AudioClip virusSound;
 
     private Image image;
     private UISpritesAnimation uiSpritesAnimation;
+    private AudioSource audioSource;
 
     private enum Phase { IDLE, WAITING, WINDOW }
     private Phase phase = Phase.IDLE;
@@ -32,6 +35,8 @@ public class Alert : MonoBehaviour
         }
         
         uiSpritesAnimation = GetComponent<UISpritesAnimation>();
+
+        audioSource = GetComponent<AudioSource>();
 
         window.SetActive(false);
 
@@ -70,6 +75,11 @@ public class Alert : MonoBehaviour
         uiSpritesAnimation.currentSpriteSequence = 0;
         uiSpritesAnimation.duration = 0.6f;
         uiSpritesAnimation.Play();
+
+        audioSource.volume = 1f;
+        audioSource.clip = notificationSound;
+        audioSource.loop = false;
+        audioSource.Play();
     }
 
     public void OnPointerClick(PointerEventData eventData)
@@ -84,6 +94,11 @@ public class Alert : MonoBehaviour
             window.SetActive(true);
             okButton.SetActive(true);
             okButton.GetComponent<AlertOKButton>().enabled = true;
+
+            audioSource.volume = 0.3f;
+            audioSource.clip = virusSound;
+            audioSource.loop = false;
+            audioSource.Play();
         }
     }
 
