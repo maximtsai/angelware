@@ -151,6 +151,8 @@ public class GameStateManager : MonoBehaviour
         {
             // trigger win condition
             Debug.Log("You win!");
+            timer.SetWon(); // so it doesn't trigger a lose. too much effort to do the same on the firewall
+            Invoke("Win", 1f);
         }
         
         switch (currentPhase)
@@ -194,8 +196,12 @@ public class GameStateManager : MonoBehaviour
 
     void AddFirewallMinigame() {
         if (firewallMinigamePrefab != null) {
-            firewallInstance = Instantiate(firewallMinigamePrefab, new Vector3(5.5f, -2f, -1f), Quaternion.identity);
+            firewallInstance = Instantiate(firewallMinigamePrefab, new Vector3(5.3f, -1.6f, -1f), Quaternion.identity);
         }
+    }
+
+    void Win() {
+        SceneManager.LoadScene("Credits");
     }
 
     public void PlayErrorSound() {

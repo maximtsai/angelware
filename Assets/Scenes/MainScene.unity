@@ -659,6 +659,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7070509227995428779, guid: dc1275a6a6bc5c44a98ddba41d72d858, type: 3}
+      propertyPath: gameStateManager
+      value: 
+      objectReference: {fileID: 1120627621}
     - target: {fileID: 7070509229149690285, guid: dc1275a6a6bc5c44a98ddba41d72d858, type: 3}
       propertyPath: m_UiScaleMode
       value: 1

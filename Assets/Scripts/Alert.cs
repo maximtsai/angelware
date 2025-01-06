@@ -8,6 +8,7 @@ using UnityEngine.EventSystems;
 public class Alert : MonoBehaviour
     , IPointerClickHandler
 {
+    public GameStateManager gameStateManager;
     public Sprite idleSprite;
     public Sprite openSprite;
     public AnimationClip alertEnter;
@@ -15,6 +16,8 @@ public class Alert : MonoBehaviour
     public Sprite windowMalwareSprite;
     public GameObject window;
     public GameObject okButton;
+    public GameObject window2;
+    public GameObject sureButton;
     public GameObject exclamation;
     public GameObject glow;
     public AudioClip notificationSound;
@@ -24,8 +27,10 @@ public class Alert : MonoBehaviour
     private UISpritesAnimation uiSpritesAnimation;
     private AudioSource audioSource;
 
-    private enum Phase { IDLE, WAITING, WINDOW }
+    private enum Phase { IDLE, WAITING, FIREWALL_TUTORIAL, WINDOW }
     private Phase phase = Phase.IDLE;
+
+    private string currentMinigame = "popup";
 
     private float timer = 0.0f;
 
@@ -45,6 +50,10 @@ public class Alert : MonoBehaviour
         okButton.SetActive(false);
         okButton.GetComponent<AlertOKButton>().enabled = false;
 
+        window2.SetActive(false);
+        sureButton.SetActive(false);
+        sureButton.GetComponent<AlertOKButton>().enabled = false;
+
         exclamation.SetActive(false);
         exclamation.GetComponent<UISpritesAnimation>().duration = 1.0f;
         exclamation.GetComponent<UISpritesAnimation>().playOnAwake = true;
@@ -53,6 +62,8 @@ public class Alert : MonoBehaviour
         glow.SetActive(false);
 
         phase = Phase.IDLE;
+
+        currentMinigame = "popup";
     }
 
     void Update() 
@@ -61,9 +72,11 @@ public class Alert : MonoBehaviour
 
     public void TriggerAlert(string type) {
         if (type == "popup") {
+            currentMinigame = "popup";
             window.GetComponent<Image>().sprite = windowMalwareSprite;
         }
         else if (type == "firewall") {
+            currentMinigame = "firewall";
             window.GetComponent<Image>().sprite = windowFirewallSprite;
         }
         phase = Phase.WAITING;
@@ -99,10 +112,28 @@ public class Alert : MonoBehaviour
             audioSource.clip = virusSound;
             audioSource.loop = false;
             audioSource.Play();
-        }
+        } 
     }
 
     public void BackToIdle() {
+        if (currentMinigame == "firewall" && phase == Phase.WINDOW) {
+            phase = Phase.FIREWALL_TUTORIAL;
+
+            uiSpritesAnimation.Stop();
+            image.sprite = openSprite;
+
+            exclamation.SetActive(false);
+            window.SetActive(false);
+            okButton.SetActive(false);
+            okButton.GetComponent<AlertOKButton>().enabled = true;
+            window2.SetActive(true);
+            sureButton.SetActive(true);
+            sureButton.GetComponent<AlertOKButton>().enabled = true;
+
+            glow.SetActive(false);
+            return;
+        }
+
         phase = Phase.IDLE;
 
         uiSpritesAnimation.Stop();
@@ -111,8 +142,13 @@ public class Alert : MonoBehaviour
         window.SetActive(false);
         okButton.SetActive(false);
         okButton.GetComponent<AlertOKButton>().enabled = false;
+        window2.SetActive(false);
+        sureButton.SetActive(false);
+        sureButton.GetComponent<AlertOKButton>().enabled = false;
         exclamation.SetActive(false);
         
         glow.SetActive(false);
+
+        gameStateManager.AddMinigame();
     }
 }
