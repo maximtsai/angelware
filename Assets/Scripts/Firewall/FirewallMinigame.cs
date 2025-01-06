@@ -30,7 +30,7 @@ public class FirewallMinigame : MonoBehaviour
     private float randomInterval;
     private float minTimeInterval = 1.2f;
     private float maxTimeInterval = 2f;
-    private const float MIN_TIME_INTERVAL_LOWER_LIMIT = 0.3f;
+    private const float MIN_TIME_INTERVAL_LOWER_LIMIT = 0.425f;
     private int level = 0;
     private int levelThresholdCount = 0;
     private const int LEVEL_THRESHOLD = 4;
@@ -164,8 +164,8 @@ public class FirewallMinigame : MonoBehaviour
         }
         
         // degrade bricks faster with each level
-        minTimeInterval *= 0.9f;
-        maxTimeInterval *= 0.9f;
+        minTimeInterval *= 0.85f;
+        maxTimeInterval *= 0.85f;
     }
 
     void InstantiateBricks() {
