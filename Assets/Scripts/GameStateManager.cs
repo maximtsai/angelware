@@ -17,7 +17,6 @@ public class GameStateManager : MonoBehaviour
     public GameObject folder2;
     public GameObject folder3;
     public GameObject folder4;
-    public List<GameObject> files;
     public GameObject filesWave0;
     public GameObject filesWave1;
     public GameObject filesWave2;
@@ -71,17 +70,6 @@ public class GameStateManager : MonoBehaviour
 
         originalPositions = new List<Vector3>();
         leftPositions = new List<Vector3>();
-        
-        foreach (var aFile in files) 
-        {
-            GameObject file = (GameObject) aFile;
-
-            originalPositions.Add(file.transform.position);
-
-            var oldX = file.transform.position.x;
-            var newX = (oldX - -8f) * 0.6f - 8f;
-            leftPositions.Add(new Vector3(newX, file.transform.position.y, file.transform.position.z));
-        }
 
         filesWave0.SetActive(true);
         filesWave1.SetActive(false);
