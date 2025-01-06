@@ -47,17 +47,15 @@ public class AngelMovement : MonoBehaviour
     	Vector3 mouseWorldPosition = mainCamera.ScreenToWorldPoint(mouseScreenPosition);
         Vector3 mouseWorldPositionOffset = mouseWorldPosition + new Vector3(-0.1f, -0.3f, 0.0f);
 
-    	Vector3 oldPos = transform.position;
 
         goalPosition = new Vector3(mouseWorldPositionOffset.x * 0.15f + transform.position.x * 0.85f, mouseWorldPositionOffset.y * 0.15f + transform.position.y * 0.85f, -5f);
 
-        Vector3 diff = transform.position - oldPos;
-    	
-    	updateVelocityAndAnim(diff);
     }
 
     private void Update()
     {
+        Vector3 oldPos = transform.position;
+
         if (!animationLocked)
         {
             transform.position = new Vector3(goalPosition.x * 0.5f + transform.position.x * 0.5f, goalPosition.y * 0.5f + transform.position.y * 0.5f, -5f);
@@ -68,7 +66,13 @@ public class AngelMovement : MonoBehaviour
                 file.transform.position = newFilePos;
                 file.transform.localScale = file.transform.localScale * 0.9f + new Vector3(1, 1, 1) * 0.1f;
             }
+        } else
+        {
+            transform.position = new Vector3(goalPosition.x * 0.013f + transform.position.x * 0.987f, goalPosition.y * 0.013f + transform.position.y * 0.987f, -5f);
         }
+        Vector3 diff = transform.position - oldPos;
+
+        updateVelocityAndAnim(diff);
     }
 
     void PickUpFile(DraggableItem newFile)
