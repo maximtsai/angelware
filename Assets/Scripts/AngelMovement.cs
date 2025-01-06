@@ -12,7 +12,6 @@ public class AngelMovement : MonoBehaviour
     private Vector3 fileOffset;
 
     public Animator myAnim;
-    bool hasFile = false;
     bool animationLocked = false;
     void Start()
     {
