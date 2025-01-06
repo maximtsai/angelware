@@ -46,6 +46,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   malwarePopupPrefabs:
   - {fileID: 4951887284127169618, guid: 53c31b67591e6f0499c7095334a7d290, type: 3}
+  - {fileID: 68250239846604611, guid: 504b5d9df34294147885d214c2dbfd29, type: 3}
+  - {fileID: 3304486697894961420, guid: d192204f615cfe949bf5e381711b750f, type: 3}
+  - {fileID: 7787475635895201821, guid: a6c0ac1e2ded28c4691da3ddc6d6fcf7, type: 3}
+  - {fileID: 6519540397557641372, guid: ebbcfd98cbe13514d872b48828b658e9, type: 3}
+  - {fileID: 1823522784881078394, guid: 830b34dfac0d9b247926c09d4db08d94, type: 3}
+  - {fileID: 5948088191341344700, guid: 2604a14f55e8a2c4b99843630219e9be, type: 3}
+  - {fileID: 3967011320954574270, guid: e54892f61ce38e54e8d0d990cc5e8289, type: 3}
+  - {fileID: 1183607033951422792, guid: fe33ada8777eab347b2755515f81d2ce, type: 3}
   - {fileID: 6874525372452039656, guid: 9761c1b6c1bf3614f96a2af441c00302, type: 3}
   numMaxPopups: 10
   intervalBetweenSpawns: 5

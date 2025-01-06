@@ -18,8 +18,10 @@ public class GlobalAudio : MonoBehaviour
         audioSourceLoop = GetComponents<AudioSource>()[0];
         audioSourceSingle = GetComponents<AudioSource>()[1];
 
-        audioSourceLoop.clip = mainBgm;
-        audioSourceLoop.Play();
+        if (mainBgm != null) {
+            audioSourceLoop.clip = mainBgm;
+            audioSourceLoop.Play();
+        }
     }
 
     // Update is called once per frame
