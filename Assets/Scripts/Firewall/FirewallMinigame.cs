@@ -112,7 +112,7 @@ public class FirewallMinigame : MonoBehaviour
         health = state1Count * 1f + state2Count * 2f + destroyedBrickCount * 4f;
         // Debug.Log("Firewall health: " + health.ToString());
         
-        if (health < 15f) {
+        if (health < 9f) {
             audioSourceLoop.Stop();
 
             firewallHealth = FirewallHealth.Healthy;

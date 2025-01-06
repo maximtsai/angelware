@@ -11,9 +11,9 @@ public class MinigamePopup : MonoBehaviour
 {
     public List<GameObject> malwarePopupPrefabs;
     public int numMaxPopups = 8;
-    public float intervalBetweenSpawns = 4.0f;
-    public float chanceToSpawn = 0.50f;
-    private float accumulatedSpawnChance = 0.5f;
+    public float intervalBetweenSpawns = 2.5f;
+    public float chanceToSpawn = 0.60f;
+    private float accumulatedSpawnChance = 1.1f;
 
     private float timeElapsed;
     private int numPopupsSpawned;
@@ -34,11 +34,11 @@ public class MinigamePopup : MonoBehaviour
         while (timeElapsed > intervalBetweenSpawns)
         {
             // do the spawning logic in here
-            float rng = UnityEngine.Random.Range(0.05f, 0.5f);
+            float rng = UnityEngine.Random.Range(0.01f, 0.3f);
             accumulatedSpawnChance += rng;
             if (accumulatedSpawnChance >= chanceToSpawn && numPopupsAlive < numMaxPopups)
             {
-                accumulatedSpawnChance = 0;
+                accumulatedSpawnChance -= chanceToSpawn;
                 // Randomly select a prefab
                 // TODO: Update the random selection to match the final list of malware sprites
                 // int randomPopupIndex = 8;
