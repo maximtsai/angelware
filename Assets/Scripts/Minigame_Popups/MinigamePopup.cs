@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using Unity.VisualScripting;
 using UnityEditor;
-using UnityEditor.Tilemaps;
 using UnityEngine;
 using UnityEngine.UIElements;
 

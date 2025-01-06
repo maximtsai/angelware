@@ -346,8 +346,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 732d629ceac6eea4a9b1eec67bf5e24c
-      internalID: 1681633608
+      spriteID: f184340be4740be44b7c0862d8bae2a8
+      internalID: -1846688476
       vertices: []
       indices: 
       edges: []
@@ -364,7 +364,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       school_reject 3: -74588290
-      school_reject 4: 1681633608
+      school_reject 4: -1846688476
       school_catch 1: -2116402182
       school_catch 3: -1485889453
       school_catch 2: 13084018

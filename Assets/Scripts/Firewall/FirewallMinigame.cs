@@ -11,16 +11,18 @@ public class FirewallMinigame : MonoBehaviour
     public AudioClip flameUp;
     public AudioClip burnUp;
 
+    public AnimationClip firewallWarningAnim;
+    public AnimationClip firewallBlazingAnim;
+
     private const int TOTAL_BRICK_COUNT = 23;
 
-    private bool active = false;
     private float currScale = 0.0f;
-    private Coroutine enterCoroutine = null;
 
     private Grid brickGrid;
     private GameObject brickPrefab;
     private List<GameObject> bricks = new List<GameObject>();
     private FirewallBG firewallBG;
+    private GameObject fireAnimation;
     private AudioSource audioSourceLoop;
     private AudioSource audioSourceSingle;
 
@@ -52,12 +54,13 @@ public class FirewallMinigame : MonoBehaviour
 
         firewallBG = GameObject.Find("FirewallBG").GetComponent<FirewallBG>();
 
+        fireAnimation = GameObject.Find("FireAnimation");
+        fireAnimation.SetActive(false);
+
         audioSourceLoop = GetComponents<AudioSource>()[0];
         audioSourceSingle = GetComponents<AudioSource>()[1];
 
         InstantiateBricks();
-
-        // enterCoroutine = StartCoroutine(IncreaseSize());
     }
 
     // Update is called once per frame
@@ -114,6 +117,7 @@ public class FirewallMinigame : MonoBehaviour
 
             firewallHealth = FirewallHealth.Healthy;
             firewallBG.Healthy();
+            fireAnimation.SetActive(false);
         }
         else if (health < 40f) {
             if (firewallHealth == FirewallHealth.Healthy) {
@@ -126,6 +130,8 @@ public class FirewallMinigame : MonoBehaviour
             
             firewallHealth = FirewallHealth.Warning;
             firewallBG.Warning();
+            fireAnimation.SetActive(true);
+            
         }
         else {
             if (firewallHealth == FirewallHealth.Healthy || firewallHealth == FirewallHealth.Warning) {
@@ -139,6 +145,8 @@ public class FirewallMinigame : MonoBehaviour
             foreach(GameObject brick in bricks) {
                 brick.GetComponent<FirewallBrick>().SetHealthState(FirewallBrick.HealthState.Destroyed);
             }
+
+            fireAnimation.GetComponent<Animator>().Play("FirewallBlazingFlames");
 
             // Trigger game over
             // WL 1/5/25: Put all the game over logic in the game state manager
@@ -183,17 +191,6 @@ public class FirewallMinigame : MonoBehaviour
                 }
             }
         }
-    }
-
-    IEnumerator IncreaseSize()
-    {
-        while (currScale < 1.0f) {
-            currScale += 0.1f;
-            transform.localScale = new Vector3(currScale, currScale, 0.0f);
-            yield return new WaitForSeconds(0.05f);
-        }
-        active = true;
-        enterCoroutine = null;
     }
 
     public bool isGameOver()

@@ -567,8 +567,9 @@ GameObject:
   - component: {fileID: 853279414}
   - component: {fileID: 853279413}
   - component: {fileID: 853279415}
+  - component: {fileID: 853279416}
   m_Layer: 0
-  m_Name: StartupAudio
+  m_Name: StartMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -698,7 +699,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startupSound: {fileID: 8300000, guid: 012ddb1cb6217024c95815cc7ecf2513, type: 3}
-  startMenuBgm: {fileID: 8300000, guid: 3377366055e7d2b45aed1e2cb94005b2, type: 3}
+  startMenuBgm: {fileID: 8300000, guid: 640daea5d8cab0c49b5f247488d1a1b0, type: 3}
+--- !u!114 &853279416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853279412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edce8dd7e849812419b9103bd8b5c11b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &879989326
 GameObject:
   m_ObjectHideFlags: 0
@@ -1214,7 +1227,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1860864009}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1305,7 +1318,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1860864009}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1418,7 +1431,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1860864009}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1602,12 +1615,12 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1714922908}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1860864009}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1760,11 +1773,11 @@ RectTransform:
   - {fileID: 1513738067}
   - {fileID: 1078717437}
   - {fileID: 555464915}
-  - {fileID: 1714922909}
   - {fileID: 2124139093}
-  - {fileID: 1283283805}
   - {fileID: 1372142878}
   - {fileID: 1486735057}
+  - {fileID: 1714922909}
+  - {fileID: 1283283805}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1824,7 +1837,7 @@ RectTransform:
   m_Children:
   - {fileID: 879989327}
   m_Father: {fileID: 1860864009}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1889,7 +1902,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2124139094}
         m_TargetAssemblyTypeName: QuitButton, Assembly-CSharp
-        m_MethodName: QuitButtonClicked
+        m_MethodName: QuitApplication
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

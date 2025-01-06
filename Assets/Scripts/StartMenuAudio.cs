@@ -27,7 +27,7 @@ public class StartMenuAudio : MonoBehaviour
     void PlayBGM() {
         audioSource.clip = startMenuBgm;
         audioSource.loop = true;
-        audioSource.volume = 0.3f;
+        audioSource.volume = 0.5f;
         audioSource.Play();
     }
 }
