@@ -21,6 +21,9 @@ public class GameStateManager : MonoBehaviour
     public GameObject folder3;
     public GameObject folder4;
     public List<GameObject> files;
+    public GameObject filesWave0;
+    public GameObject filesWave1;
+    public GameObject filesWave2;
     public Timer timer;
     public Alert alert;
 
@@ -82,6 +85,10 @@ public class GameStateManager : MonoBehaviour
             var newX = (oldX - -8f) * 0.6f - 8f;
             leftPositions.Add(new Vector3(newX, file.transform.position.y, file.transform.position.z));
         }
+
+        filesWave0.SetActive(true);
+        filesWave1.SetActive(false);
+        filesWave2.SetActive(false);
     }
 
     public void Update()
@@ -137,49 +144,57 @@ public class GameStateManager : MonoBehaviour
 
     public void IncreaseFileDropped() {
         fileDroppedCount += 1;
-        int filesLeft = WIN_THRESHOLD - fileDroppedCount;
-        filesLeftText.GetComponent<TMP_Text>().text = "Files Left: " + filesLeft.ToString();
-        if (fileDroppedCount >= WIN_THRESHOLD) {
-            // trigger win state
-        }
-        else if (fileDroppedCount >= FIREWALL_THRESHOLD) {
-            if (currentPhase != GamePhase.FIREWALL) {
-                currentPhase = GamePhase.FIREWALL;
+        int filesLeft = -1;
 
-                alert.TriggerAlert("firewall");
-            }
+        // This is processed before the file object is destroyed and thus never reaches 0
+        if (1 >= filesWave0.transform.childCount && currentPhase == GamePhase.BEGINNING)
+        {
+            Debug.Log("Entering POPUP Phase");
+            currentPhase = GamePhase.POPUP;
+            alert.TriggerAlert("popup");
         }
-        else if (fileDroppedCount >= POPUP_THRESHOLD) {
-            if (currentPhase != GamePhase.POPUP) {
-                currentPhase = GamePhase.POPUP;
-                
-                alert.TriggerAlert("popup");
-            }
+        else if (1 >= filesWave1.transform.childCount && currentPhase == GamePhase.POPUP)
+        {
+            Debug.Log("Entering FIREWALL Phase");
+            currentPhase = GamePhase.FIREWALL;
+            alert.TriggerAlert("firewall");
         }
+        else if (1 >= filesWave2.transform.childCount && currentPhase == GamePhase.FIREWALL)
+        {
+            // trigger win condition
+            Debug.Log("You win!");
+        }
+        
+        switch (currentPhase)
+        {
+            case GamePhase.BEGINNING:
+                filesLeft = filesWave0.transform.childCount - 1;
+                break;
+            case GamePhase.POPUP:
+                filesLeft = filesWave1.transform.childCount - 1;
+                break;
+            case GamePhase.FIREWALL:
+                filesLeft = filesWave2.transform.childCount - 1;
+                break;
+            default:
+                filesLeft = -1;
+                break;
+        }
+        filesLeftText.GetComponent<TMP_Text>().text = "Files Left: " + filesLeft.ToString();
     }
 
     public void AddMinigame() {
         if (currentPhase == GamePhase.POPUP) {
             AddPopupMinigame();
+            filesWave1.SetActive(true);
         }
         else if (currentPhase == GamePhase.FIREWALL) {
-            for (int i = 0; i < files.Count; i++) {
-                    if (files[i] == null) {
-                        // some files are destroyed, continue
-                        continue;
-                    }
-                    GameObject file = files[i];
-
-                    Vector3 originalPosition = originalPositions[i];
-                    Vector3 leftPosition = leftPositions[i];
-
-                    StartCoroutine(InterpolateOverTime(file, originalPosition, leftPosition, .5f));
-                }
-                StartCoroutine(InterpolateOverTime(folder1, FOLDER_1_START_POSITION, FOLDER_1_LEFT_POSITION, .5f));
-                StartCoroutine(InterpolateOverTime(folder2, FOLDER_2_START_POSITION, FOLDER_2_LEFT_POSITION, .5f));
-                StartCoroutine(InterpolateOverTime(folder3, FOLDER_3_START_POSITION, FOLDER_3_LEFT_POSITION, .5f));
-                StartCoroutine(InterpolateOverTime(folder4, FOLDER_4_START_POSITION, FOLDER_4_LEFT_POSITION, .5f));
-                Invoke("AddFirewallMinigame", .5f);
+            StartCoroutine(InterpolateOverTime(folder1, FOLDER_1_START_POSITION, FOLDER_1_LEFT_POSITION, .5f));
+            StartCoroutine(InterpolateOverTime(folder2, FOLDER_2_START_POSITION, FOLDER_2_LEFT_POSITION, .5f));
+            StartCoroutine(InterpolateOverTime(folder3, FOLDER_3_START_POSITION, FOLDER_3_LEFT_POSITION, .5f));
+            StartCoroutine(InterpolateOverTime(folder4, FOLDER_4_START_POSITION, FOLDER_4_LEFT_POSITION, .5f));
+            Invoke("AddFirewallMinigame", .5f);
+            filesWave2.SetActive(true);
         }
     }
 
