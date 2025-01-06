@@ -77,6 +77,7 @@ public class GameStateManager : MonoBehaviour
         filesWave2.SetActive(false);
 
         audioSource = GetComponent<AudioSource>();
+        audioSource.volume = 0.5f;
     }
 
     public void Update()

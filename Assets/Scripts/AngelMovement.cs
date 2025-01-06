@@ -203,7 +203,7 @@ public class AngelMovement : MonoBehaviour
                 if (lastState != nextState)
                 {
                     flyingLocked = true;
-                    Invoke("unlockFlying", 0.6f);
+                    Invoke("unlockFlying", 1f);
                 }
                 break;
             case "flydown":
@@ -211,7 +211,7 @@ public class AngelMovement : MonoBehaviour
                 if (lastState != nextState)
                 {
                     flyingLocked = true;
-                    Invoke("unlockFlying", 0.6f);
+                    Invoke("unlockFlying", 1f);
                 }
                 break;
             case "slap":

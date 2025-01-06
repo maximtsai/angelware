@@ -10,9 +10,10 @@ using UnityEngine.UIElements;
 public class MinigamePopup : MonoBehaviour
 {
     public List<GameObject> malwarePopupPrefabs;
-    public int numMaxPopups = 10;
-    public float intervalBetweenSpawns = 5.0f;
+    public int numMaxPopups = 8;
+    public float intervalBetweenSpawns = 6.0f;
     public float chanceToSpawn = 0.50f;
+    private float accumulatedSpawnChance = 0.5f;
 
     private float timeElapsed;
     private int numPopupsSpawned;
@@ -33,9 +34,11 @@ public class MinigamePopup : MonoBehaviour
         while (timeElapsed > intervalBetweenSpawns)
         {
             // do the spawning logic in here
-            float rng = UnityEngine.Random.Range(0f, 1f);
-            if (rng <= chanceToSpawn && numPopupsAlive < numMaxPopups)
+            float rng = UnityEngine.Random.Range(0.05f, 0.35f);
+            accumulatedSpawnChance += rng;
+            if (accumulatedSpawnChance <= chanceToSpawn && numPopupsAlive < numMaxPopups)
             {
+                accumulatedSpawnChance = 0;
                 // Randomly select a prefab
                 // TODO: Update the random selection to match the final list of malware sprites
                 // int randomPopupIndex = 8;
@@ -44,7 +47,7 @@ public class MinigamePopup : MonoBehaviour
                 //     randomPopupIndex = Mathf.RoundToInt(UnityEngine.Random.Range(2, 17));
                 // }
                 // string resourceName = "Prefabs/Minigame_Popups/Malware-" + randomPopupIndex.ToString("00");
-                
+
                 int randomPopupIndex = UnityEngine.Random.Range(0, malwarePopupPrefabs.Count);
                 try
                 {
