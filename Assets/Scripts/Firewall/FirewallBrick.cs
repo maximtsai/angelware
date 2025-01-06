@@ -22,6 +22,7 @@ public class FirewallBrick : MonoBehaviour
     public Sprite brickDState0Sprite;
     public Sprite brickDState1Sprite;
     public Sprite brickDState2Sprite;
+    private GameObject hammerPrefab;
 
 
     public FirewallMinigame firewallMinigame;
@@ -35,6 +36,7 @@ public class FirewallBrick : MonoBehaviour
     {
         healthState = HealthState.State0;
         GetComponent<SpriteRenderer>().enabled = true;
+        hammerPrefab = Resources.Load<GameObject>("Prefabs/hammer_0000");
 
         brickType = Random.Range(0,4);
         
@@ -76,15 +78,27 @@ public class FirewallBrick : MonoBehaviour
                 break;
             case HealthState.State1:
                 healthState = HealthState.State0;
+                PlayHammerAnim();
                 break;
             case HealthState.State2:
                 healthState = HealthState.State1;
+                PlayHammerAnim();
                 break;
             case HealthState.Destroyed:
                 // do nothing, can't be repaired
                 break;
         }
         SetAppearance();
+    }
+
+    void PlayHammerAnim()
+    {
+        Vector3 hammerPos = gameObject.transform.position;
+        hammerPos.x -= 0.2f;
+        hammerPos.y -= 0.1f;
+        hammerPos.z = -5f;
+        GameObject hammer = Instantiate(hammerPrefab, hammerPos, Quaternion.identity);
+
     }
 
     void SetAppearance() {
