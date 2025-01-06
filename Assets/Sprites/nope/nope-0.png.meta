@@ -1,0 +1,384 @@
+fileFormatVersion: 2
+guid: ef22dab033ecda047af885a9cbb80757
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: nope_catch 1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1951
+        width: 81
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5308642, y: 0.53125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13c3a44c9dad5a84d96c45a810a9646f
+      internalID: -1388985036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nope_catch 2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1760
+        width: 79
+        height: 95
+      alignment: 9
+      pivot: {x: 0.51898736, y: 0.5368421}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f4951dce76a1344892b8e204de4fe2b
+      internalID: 1449439869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nope_catch 3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1384
+        width: 78
+        height: 92
+      alignment: 9
+      pivot: {x: 0.4871795, y: 0.5543478}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77e9b706a0e54d9458a465dc73f8b522
+      internalID: -1415494689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nope_closed 1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1854
+        width: 80
+        height: 95
+      alignment: 9
+      pivot: {x: 0.5125, y: 0.57894737}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57af834d3e066bf4ebbcd59eb5c02705
+      internalID: 1775913631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nope_closed 2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1297
+        width: 80
+        height: 85
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8504f9d3621d7a94db1efff08d434658
+      internalID: -1778401945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nope_closed 3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1121
+        width: 78
+        height: 86
+      alignment: 9
+      pivot: {x: 0.51282054, y: 0.59302324}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb75789fa4b0b064f839fbb241a792d1
+      internalID: -382191054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nope_closed 4
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 75
+        height: 83
+      alignment: 9
+      pivot: {x: 0.49333334, y: 0.61445785}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da2d1d321b713bb4384f23817e20bf91
+      internalID: 936291384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nope_hover 1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1209
+        width: 78
+        height: 86
+      alignment: 9
+      pivot: {x: 0.5, y: 0.59302324}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e22496ae75b83c4428f23a05385d0437
+      internalID: 1157916352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nope_hover 2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1034
+        width: 77
+        height: 85
+      alignment: 9
+      pivot: {x: 0.5064935, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9376fd5cd0a6a143961ccf749bd64a1
+      internalID: -1319673762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nope_hover 3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 947
+        width: 76
+        height: 85
+      alignment: 9
+      pivot: {x: 0.5, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0993d02e9cf13594ab9bbc2475907ea4
+      internalID: 1142764836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nope_reject 1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1665
+        width: 80
+        height: 93
+      alignment: 9
+      pivot: {x: 0.5125, y: 0.5483871}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e57717ae801042841858d9d2e4b170cb
+      internalID: 455115589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nope_reject 2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1474
+        width: 78
+        height: 94
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5851064}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a49719b252c443849ab784bd40cb7b00
+      internalID: -878021522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nope_reject 3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1570
+        width: 79
+        height: 93
+      alignment: 9
+      pivot: {x: 0.49367088, y: 0.5483871}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93c5fea76d2da474fa331f371c1fa7c1
+      internalID: 1782703897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 3bdc49c3dcd84104d9c656ce76b23d2b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      nope_hover 1: 1157916352
+      nope_closed 3: -382191054
+      nope_reject 2: -878021522
+      nope_hover 2: -1319673762
+      nope_reject 3: 1782703897
+      nope_catch 3: -1415494689
+      nope_reject 1: 455115589
+      nope_catch 1: -1388985036
+      nope_catch 2: 1449439869
+      nope_closed 2: -1778401945
+      nope_closed 4: 936291384
+      nope_closed 1: 1775913631
+      nope_hover 3: 1142764836
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

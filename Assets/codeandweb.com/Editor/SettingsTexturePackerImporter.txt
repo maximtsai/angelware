@@ -2,10 +2,22 @@ version: 2
 tpsheetFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
 - Assets/Sprites/angel/angel-0.tpsheet
+- Assets/Sprites/cat/cat.tpsheet
+- Assets/Sprites/games/games-0.tpsheet
+- Assets/Sprites/nope/nope-0.tpsheet
+- Assets/Sprites/school/school-0.tpsheet
 textureFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
 - Assets/Sprites/angel/angel-0.png
+- Assets/Sprites/cat/cat.png
+- Assets/Sprites/games/games-0.png
+- Assets/Sprites/nope/nope-0.png
+- Assets/Sprites/school/school-0.png
 normalmapFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
+- 
+- 
+- 
+- 
 - 
 enableDebugOutput: 0

@@ -119,8 +119,8 @@ TextureImporter:
       name: AngelFly1
       rect:
         serializedVersion: 2
-        x: 1
-        y: 602
+        x: 854
+        y: 1813
         width: 492
         height: 234
       alignment: 9
@@ -141,7 +141,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 422
-        y: 787
+        y: 1811
         width: 497
         height: 236
       alignment: 9
@@ -162,7 +162,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 780
+        y: 1804
         width: 501
         height: 243
       alignment: 9
@@ -182,8 +182,8 @@ TextureImporter:
       name: AngelFlyUp1
       rect:
         serializedVersion: 2
-        x: 1
-        y: 386
+        x: 2
+        y: 1595
         width: 498
         height: 222
       alignment: 9
@@ -203,8 +203,8 @@ TextureImporter:
       name: AngelFlyUp2
       rect:
         serializedVersion: 2
-        x: 494
-        y: 569
+        x: 1549
+        y: 1822
         width: 498
         height: 225
       alignment: 9
@@ -224,8 +224,8 @@ TextureImporter:
       name: AngelFlyUp3
       rect:
         serializedVersion: 2
-        x: 282
-        y: 300
+        x: 1551
+        y: 1607
         width: 496
         height: 216
       alignment: 9
@@ -245,8 +245,8 @@ TextureImporter:
       name: angelidle1
       rect:
         serializedVersion: 2
-        x: 1860
-        y: 677
+        x: 1322
+        y: 1192
         width: 187
         height: 346
       alignment: 9
@@ -266,8 +266,8 @@ TextureImporter:
       name: angelidle2
       rect:
         serializedVersion: 2
-        x: 1248
-        y: 678
+        x: 1145
+        y: 1029
         width: 195
         height: 345
       alignment: 9
@@ -287,8 +287,8 @@ TextureImporter:
       name: angelidle3
       rect:
         serializedVersion: 2
-        x: 1675
-        y: 686
+        x: 913
+        y: 1076
         width: 189
         height: 337
       alignment: 9
@@ -308,8 +308,8 @@ TextureImporter:
       name: angelidlebubble1
       rect:
         serializedVersion: 2
-        x: 669
-        y: 19
+        x: 1737
+        y: 1287
         width: 310
         height: 345
       alignment: 9
@@ -329,8 +329,8 @@ TextureImporter:
       name: angelidlebubble2
       rect:
         serializedVersion: 2
-        x: 1
-        y: 37
+        x: 643
+        y: 1476
         width: 311
         height: 349
       alignment: 9
@@ -350,8 +350,8 @@ TextureImporter:
       name: angelidlebubble3
       rect:
         serializedVersion: 2
-        x: 944
-        y: 683
+        x: 294
+        y: 1293
         width: 306
         height: 340
       alignment: 9
@@ -367,6 +367,216 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: file bubble_0001
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 1060
+        width: 215
+        height: 310
+      alignment: 9
+      pivot: {x: 1.0395349, y: 0.66129035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 900a0797d5b47104e9c819872a9b3da7
+      internalID: -555847236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: file bubble_0002
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 1193
+        width: 255
+        height: 360
+      alignment: 9
+      pivot: {x: 0.97843134, y: 0.51944447}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b3c23826b5eb734cb6ec95440f109a1
+      internalID: -1400024460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: file bubble_0003
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 1177
+        width: 259
+        height: 372
+      alignment: 9
+      pivot: {x: 0.96718144, y: 0.49731183}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61d5978a4a08206459424f54df48ae26
+      internalID: -1257619002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: file bubble_0004
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 1352
+        width: 289
+        height: 338
+      alignment: 9
+      pivot: {x: 0.88062286, y: 0.5295858}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb1c740d02337084da751c95a530b6ef
+      internalID: -700378403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: file bubble_0005
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 1593
+        width: 293
+        height: 311
+      alignment: 9
+      pivot: {x: 0.8549488, y: 0.65273315}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b384f7b04b277d249ad420c328e4ad45
+      internalID: -1780293972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: file bubble_0006
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 925
+        width: 238
+        height: 286
+      alignment: 9
+      pivot: {x: 0.960084, y: 0.63986015}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39e13184b602ee847a5e5b3e782c5b3e
+      internalID: 556014024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: file bubble_0007
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 1071
+        width: 187
+        height: 353
+      alignment: 9
+      pivot: {x: 1.0989305, y: 0.6458923}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 599dff3e65c29b4498b6eaf72500bbff
+      internalID: -232299720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: file bubble_0008
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 1278
+        width: 255
+        height: 352
+      alignment: 9
+      pivot: {x: 0.8490196, y: 0.65909094}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b15bcf26bfb9ea14a837e4bf594a4ce1
+      internalID: -716523437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: file bubble_0009
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1258
+        width: 311
+        height: 358
+      alignment: 9
+      pivot: {x: 0.6768489, y: 0.6564246}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 191fa8113ea42da429db6e15528fd25b
+      internalID: 1954606337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: file bubble_0010
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 1465
+        width: 305
+        height: 347
+      alignment: 9
+      pivot: {x: 0.6803279, y: 0.6628242}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 280eb03e2dc41054589ab8e83befce45
+      internalID: -1343236998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -378,18 +588,28 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      file bubble_0007: -232299720
       angelidle1: 2086977079
+      file bubble_0008: -716523437
+      file bubble_0004: -700378403
+      file bubble_0005: -1780293972
       angelidlebubble3: -1264882191
       angelidlebubble2: 1525317170
       angelidle2: -1685037848
       AngelFlyUp3: 1266132848
       AngelFly3: 775437928
+      file bubble_0002: -1400024460
       AngelFlyUp1: 1513548211
       AngelFly1: -348320803
+      file bubble_0010: -1343236998
+      file bubble_0003: -1257619002
       angelidlebubble1: 1443428771
       angelidle3: -1902668496
       AngelFly2: -1815202867
+      file bubble_0001: -555847236
       AngelFlyUp2: -1330988406
+      file bubble_0009: 1954606337
+      file bubble_0006: 556014024
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

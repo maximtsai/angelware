@@ -1,0 +1,362 @@
+fileFormatVersion: 2
+guid: c828ec91664697c4cbe599b3e2ee84f9
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: school_catch 1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1832
+        width: 101
+        height: 107
+      alignment: 9
+      pivot: {x: 0.5049505, y: 0.48598132}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ed2baa86b4a03043854570a507bfd01
+      internalID: -2116402182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: school_catch 2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1614
+        width: 91
+        height: 108
+      alignment: 9
+      pivot: {x: 0.47252747, y: 0.49074075}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc098496aafd96429485f5e35481702
+      internalID: 13084018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: school_catch 3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1302
+        width: 89
+        height: 100
+      alignment: 9
+      pivot: {x: 0.53932583, y: 0.51}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42b52c6703ab97843b78fbe482e6b7ba
+      internalID: -1485889453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: school_closed 1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 993
+        width: 84
+        height: 98
+      alignment: 9
+      pivot: {x: 0.52380955, y: 0.53061223}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e7be9687417dce43a1bfa954c7c35bb
+      internalID: -1864245907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: school_closed 2
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1404
+        width: 83
+        height: 106
+      alignment: 9
+      pivot: {x: 0.4939759, y: 0.49056605}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19ba682ce02afb14db4f7ec5dacdf47f
+      internalID: -147769681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: school_closed 3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 80
+        height: 91
+      alignment: 9
+      pivot: {x: 0.4875, y: 0.5604396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3568dacd277fd8f46b9d37ff86395c90
+      internalID: 610913059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: school_hover 1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1194
+        width: 82
+        height: 106
+      alignment: 9
+      pivot: {x: 0.5365854, y: 0.49056605}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c5311ce0dbbfb44bdb8c358b5e31f7
+      internalID: 601524247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: school_hover 2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1510
+        width: 87
+        height: 103
+      alignment: 9
+      pivot: {x: 0.51724136, y: 0.5048544}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 244a16c750cc3ba4aa3a252516989b8f
+      internalID: -1106148028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: school_hover 3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1093
+        width: 87
+        height: 99
+      alignment: 9
+      pivot: {x: 0.50574714, y: 0.5151515}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6cd1060338e80d478cefcd1cd5ac2fe
+      internalID: -255409421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: school_reject 1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1941
+        width: 104
+        height: 106
+      alignment: 9
+      pivot: {x: 0.50961536, y: 0.49056605}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bd0d03dee30e864db1c9c74e9deebc5
+      internalID: -469473900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: school_reject 2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1724
+        width: 96
+        height: 106
+      alignment: 9
+      pivot: {x: 0.46875, y: 0.49056605}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a81c461812f82240ac82c6e27523673
+      internalID: -922414199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: school_reject 3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 94
+        width: 81
+        height: 88
+      alignment: 9
+      pivot: {x: 0.50617284, y: 0.59090906}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0409675a5a3a42448f5535f666cf56a
+      internalID: -74588290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f02e526b777f8c74398b2f43c7c825a6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      school_reject 3: -74588290
+      school_catch 1: -2116402182
+      school_catch 3: -1485889453
+      school_catch 2: 13084018
+      school_closed 3: 610913059
+      school_closed 2: -147769681
+      school_closed 1: -1864245907
+      school_hover 2: -1106148028
+      school_reject 1: -469473900
+      school_hover 1: 601524247
+      school_hover 3: -255409421
+      school_reject 2: -922414199
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

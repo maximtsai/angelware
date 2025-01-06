@@ -1,0 +1,362 @@
+fileFormatVersion: 2
+guid: c3b2cef6a608ccc4faa690428037e8a7
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: lolz_catch 1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 408
+        width: 107
+        height: 103
+      alignment: 9
+      pivot: {x: 0.5046729, y: 0.52427185}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 473a718e9333325449174a09e4df1894
+      internalID: -1813706105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lolz_catch 2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 309
+        width: 93
+        height: 100
+      alignment: 9
+      pivot: {x: 0.4623656, y: 0.51}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adc165861c982ce4c8d10969458a75a3
+      internalID: -1859957589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lolz_catch 3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 205
+        width: 85
+        height: 100
+      alignment: 9
+      pivot: {x: 0.47058824, y: 0.51}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c25e17b9bc87c094b8a7703671cbf5ca
+      internalID: 47406231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lolz_closed 1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 115
+        width: 90
+        height: 93
+      alignment: 9
+      pivot: {x: 0.44444445, y: 0.56989247}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 070ff5fbbb88afe498b5b9093714b12c
+      internalID: -2073954883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lolz_closed 2
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 335
+        width: 88
+        height: 93
+      alignment: 9
+      pivot: {x: 0.4318182, y: 0.58064514}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d8938d19baa2e48a893cef45614615
+      internalID: -548994471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lolz_closed 3
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 144
+        width: 92
+        height: 86
+      alignment: 9
+      pivot: {x: 0.42391303, y: 0.627907}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd1f877acaf645042bb2e223fa5934a1
+      internalID: 261368674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lolz_hover 1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 19
+        width: 86
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d47e1f614523b6947ad8efc4e819539e
+      internalID: -2031843672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lolz_hover 2
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 52
+        width: 85
+        height: 92
+      alignment: 9
+      pivot: {x: 0.5176471, y: 0.5869565}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87147558328627d4899f568253b62869
+      internalID: 1388521998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lolz_hover 3
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 170
+        width: 81
+        height: 91
+      alignment: 9
+      pivot: {x: 0.50617284, y: 0.5934066}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8fc2e35f92796748b6260a39ae919aa
+      internalID: 850493408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lolz_reject 1
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 240
+        width: 90
+        height: 89
+      alignment: 9
+      pivot: {x: 0.44444445, y: 0.5955056}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b73e26677a3fd1549b7ed4f0da15cabd
+      internalID: 987868576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lolz_reject 2
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 418
+        width: 88
+        height: 93
+      alignment: 9
+      pivot: {x: 0.45454547, y: 0.58064514}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ebf3a9b5f304a74ab04659c012f984b
+      internalID: 446410890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lolz_reject 3
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 422
+        width: 80
+        height: 89
+      alignment: 9
+      pivot: {x: 0.5, y: 0.60674155}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9efc1fe4f9a0be24196d2bdbd339c2c4
+      internalID: 257709834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: b58cc9951b107e541a6017c3d6bbc233
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      lolz_reject 1: 987868576
+      lolz_reject 3: 257709834
+      lolz_catch 3: 47406231
+      lolz_catch 2: -1859957589
+      lolz_reject 2: 446410890
+      lolz_catch 1: -1813706105
+      lolz_hover 1: -2031843672
+      lolz_hover 2: 1388521998
+      lolz_hover 3: 850493408
+      lolz_closed 1: -2073954883
+      lolz_closed 2: -548994471
+      lolz_closed 3: 261368674
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
