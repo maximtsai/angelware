@@ -45,12 +45,10 @@ public class DropFolder : MonoBehaviour
         DraggableItem draggableItem = droppedObject.GetComponent<DraggableItem>();
         if (draggableItem.folderIdx == folderIdx)
         {
-            Debug.Log("catch drop");
             myAnim.Play("catch");
         }
         else
         {
-            Debug.Log("reject drop");
             myAnim.Play("reject");
         }
 

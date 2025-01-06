@@ -12,7 +12,13 @@ public class AngelMovement : MonoBehaviour
     private Vector3 fileOffset;
 
     public Animator myAnim;
-    bool animationLocked = false;
+    bool animationLocked = false; // playing animation and can't move
+    bool flyingLocked = false; // started flying so won't change animation for a moment
+    string lastState = "idle";
+
+    public delegate void OnClose(GameObject obj);
+    public static event OnClose onClose;
+
     void Start()
     {
     	myAnim = GetComponent<Animator>();
@@ -21,6 +27,8 @@ public class AngelMovement : MonoBehaviour
         startScale = transform.localScale.x;
         DraggableItem.onPickUp += PickUpFile;
         DraggableItem.onDrop += DropFile;
+
+        Popup.onClose += ClosePopup;
     }
 
     void Update()
@@ -67,14 +75,28 @@ public class AngelMovement : MonoBehaviour
 
     public void DropFile(DraggableItem newFile)
     {
+        animationLocked = false;
+        SwitchState("idle");
         file.transform.position = transform.position + fileOffset;
         file.transform.localScale = new Vector3(1, 1, 1);
         // file.DropFile();
         file = null;
     }
 
+    void ClosePopup(GameObject obj)
+    {
+        Vector3 closePos = obj.transform.position;
+        closePos.x += obj.GetComponent<BoxCollider2D>().offset.x * 0.85f * obj.transform.parent.transform.localScale.x;
+        closePos.y += obj.GetComponent<BoxCollider2D>().offset.y * 0.85f * obj.transform.parent.transform.localScale.y;
+        Debug.Log(obj.GetComponent<BoxCollider2D>().offset);
+        Vector3 moveToPos = new Vector3(closePos.x, closePos.y, -5f);
+        transform.position = moveToPos;
+        SwitchState("slap");
+
+    }
+
     private void updateVelocityAndAnim(Vector3 diff) {
-        lastFewVelocity = lastFewVelocity * 0.95f + diff * 0.05f;
+        lastFewVelocity = lastFewVelocity * 0.97f + diff * 0.03f;
         float xVel = lastFewVelocity.x;
         float flyAngle;
         if (Mathf.Abs(xVel) < 0.0001f)
@@ -92,7 +114,7 @@ public class AngelMovement : MonoBehaviour
 
         Vector3 currentRotation = transform.eulerAngles;
         currentRotation.z = currentRotation.z * 0.9f;
-        if (lastFewVelocity.magnitude < 0.01f) {
+        if (!flyingLocked && lastFewVelocity.magnitude < 0.02f && diff.magnitude < 0.025f) {
             // Add 10 degrees to the Z-axis for clockwise rotation
             currentRotation.z = 0;
             transform.localScale = new Vector3(startScale, startScale, 1);
@@ -107,8 +129,7 @@ public class AngelMovement : MonoBehaviour
             }
         } else if (file == null) {
             SwitchState("idle");
-        }
-        else if (lastFewVelocity.y < 0) {
+        } else if (lastFewVelocity.y < 0) {
             // flying down (I think)
             if (flyAngleLeftRight < 0)
             {
@@ -150,6 +171,10 @@ public class AngelMovement : MonoBehaviour
             // We're playing an uninterruptible animation
             return;
         }
+        if (flyingLocked && nextState == "bubble")
+        {
+            return;
+        }
 
         switch (nextState)
         {
@@ -161,9 +186,19 @@ public class AngelMovement : MonoBehaviour
                 break;
             case "flyup":
     			myAnim.Play("ang_fly_up");
+                if (lastState != nextState)
+                {
+                    flyingLocked = true;
+                    Invoke("unlockFlying", 0.6f);
+                }
                 break;
             case "flydown":
     			myAnim.Play("ang_fly_down");
+                if (lastState != nextState)
+                {
+                    flyingLocked = true;
+                    Invoke("unlockFlying", 0.6f);
+                }
                 break;
             case "slap":
                 myAnim.Play("ang_slap");
@@ -181,9 +216,15 @@ public class AngelMovement : MonoBehaviour
     			myAnim.Play("ang_idle");
                 break;
         }
+        lastState = nextState;
 
     }
 
+    private void unlockFlying()
+    {
+        flyingLocked = false;
+
+    }
     public void unlockAnimation()
     {
         animationLocked = false;

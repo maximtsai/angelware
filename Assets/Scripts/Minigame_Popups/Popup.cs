@@ -12,6 +12,11 @@ public class Popup : MonoBehaviour
     public GameObject parent;
     public MinigamePopup minigameController;
 
+    public delegate void OnClose(GameObject obj);
+    public static event OnClose onClose;
+
+    private bool isClosing = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +30,18 @@ public class Popup : MonoBehaviour
     }
 
     public void OnMouseDown()
+    {
+        if (isClosing)
+        {
+            return;
+        }
+        isClosing = true;
+        onClose?.Invoke(gameObject);
+        Invoke("closePopup", 0.21f);
+
+    }
+
+    private void closePopup()
     {
         minigameController.KillPopup();
         Destroy(parent);
