@@ -29,6 +29,7 @@ public class GameStateManager : MonoBehaviour
     private GameObject firewallMinigamePrefab;
     private GameObject firewallInstance;
     private GameObject popupMinigamePrefab;
+    private AudioSource audioSource;
 
     enum GamePhase { BEGINNING, POPUP, FIREWALL }
     private GamePhase currentPhase = GamePhase.BEGINNING;
@@ -74,6 +75,8 @@ public class GameStateManager : MonoBehaviour
         filesWave0.SetActive(true);
         filesWave1.SetActive(false);
         filesWave2.SetActive(false);
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void Update()
@@ -193,6 +196,10 @@ public class GameStateManager : MonoBehaviour
         if (firewallMinigamePrefab != null) {
             firewallInstance = Instantiate(firewallMinigamePrefab, new Vector3(5.5f, -2f, -1f), Quaternion.identity);
         }
+    }
+
+    public void PlayErrorSound() {
+        audioSource.Play();
     }
 
 }

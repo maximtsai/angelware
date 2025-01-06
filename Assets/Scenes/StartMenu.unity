@@ -733,7 +733,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startupSound: {fileID: 8300000, guid: 012ddb1cb6217024c95815cc7ecf2513, type: 3}
-  startMenuBgm: {fileID: 8300000, guid: 640daea5d8cab0c49b5f247488d1a1b0, type: 3}
+  startMenuBgm: {fileID: 8300000, guid: fc652b28af7c2e3408262187ba3b6ccd, type: 3}
 --- !u!114 &853279416
 MonoBehaviour:
   m_ObjectHideFlags: 0

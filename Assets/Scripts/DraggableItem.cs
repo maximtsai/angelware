@@ -60,6 +60,7 @@ public class DraggableItem : MonoBehaviour
             else
             {
                 StartCoroutine(InterpolateOverTime(transform.position, startPos, 0.36f));
+                gameStateManager.GetComponent<GameStateManager>().PlayErrorSound();
             }
         } else
         {
