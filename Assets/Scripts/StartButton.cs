@@ -19,6 +19,6 @@ public class StartButton : MonoBehaviour
     }
 
     void LoadMainScene() {
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("CutsceneIntro");
     }
 }
