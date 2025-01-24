@@ -11,14 +11,12 @@ public class AngelMovement : MonoBehaviour
     private DraggableItem file;
     private Vector3 fileOffset;
     private Vector3 goalPosition;
+    private bool hasWon = false;
 
     private Animator myAnim;
     bool animationLocked = false; // playing animation and can't move
     bool flyingLocked = false; // started flying so won't change animation for a moment
     string lastState = "idle";
-
-    public delegate void OnClose(GameObject obj);
-    public static event OnClose onClose;
 
     void Start()
     {
@@ -56,6 +54,9 @@ public class AngelMovement : MonoBehaviour
     private void Update()
     {
         Vector3 oldPos = transform.position;
+        if (hasWon) {
+            return;
+        }
 
         if (!animationLocked)
         {
@@ -226,6 +227,10 @@ public class AngelMovement : MonoBehaviour
                 myAnim.Play("ang_dunk");
                 animationLocked = true;
                 break;
+            case "celebrate":
+                myAnim.Play("ang_celebrate");
+                animationLocked = true;
+                break;
             default:
     			myAnim.Play("ang_idle");
                 break;
@@ -243,4 +248,22 @@ public class AngelMovement : MonoBehaviour
     {
         animationLocked = false;
     }
+
+    public void celebrateWin() {
+        animationLocked = false;
+        hasWon = true;
+        transform.position = new Vector3(transform.position.x - 1.1f, transform.position.y + 1, transform.position.z);
+        transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+        transform.eulerAngles = new Vector3(0, 0, 0);
+        SwitchState("dunk");
+        // Invoke("finalWin", 1.5f);
+        Debug.Log("Celebrate Win");
+
+    }
+
+    // public void finalWin() {
+    //     Debug.Log("Final final win");
+    //     animationLocked = false;
+    //     SwitchState("celebrate");
+    // }
 }

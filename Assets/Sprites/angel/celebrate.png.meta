@@ -1,0 +1,516 @@
+fileFormatVersion: 2
+guid: a529dcf8d1e8e8949a93700ee443940d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: animatre_0000
+      rect:
+        serializedVersion: 2
+        x: 1601
+        y: 1141
+        width: 208
+        height: 277
+      alignment: 9
+      pivot: {x: 0.59134614, y: 0.6841155}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b376822a0ca92c42b3bbff15f3d7b69
+      internalID: -2089936799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatre_0001
+      rect:
+        serializedVersion: 2
+        x: 1601
+        y: 1141
+        width: 208
+        height: 277
+      alignment: 9
+      pivot: {x: 0.59134614, y: 0.6841155}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41a2fcc8d9c536f4f88ee36021e00160
+      internalID: -1901797040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatre_0002
+      rect:
+        serializedVersion: 2
+        x: 1601
+        y: 1141
+        width: 208
+        height: 277
+      alignment: 9
+      pivot: {x: 0.59134614, y: 0.6841155}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b91ca7bbacbfdae448d9114d6407d1f8
+      internalID: -459514025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatre_0003
+      rect:
+        serializedVersion: 2
+        x: 1601
+        y: 1141
+        width: 208
+        height: 277
+      alignment: 9
+      pivot: {x: 0.59134614, y: 0.6841155}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 943044dc0ea62ca41977fac70bc0adb4
+      internalID: 1459272816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatre_0004
+      rect:
+        serializedVersion: 2
+        x: 1601
+        y: 1141
+        width: 208
+        height: 277
+      alignment: 9
+      pivot: {x: 0.59134614, y: 0.6841155}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51f4dbc849430f246af20d866489ec87
+      internalID: -166461187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatre_0005
+      rect:
+        serializedVersion: 2
+        x: 1601
+        y: 1141
+        width: 208
+        height: 277
+      alignment: 9
+      pivot: {x: 0.59134614, y: 0.6841155}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2041d385a2dff4f44924a26b7539e7cd
+      internalID: -1979542333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatre_0006
+      rect:
+        serializedVersion: 2
+        x: 1601
+        y: 1141
+        width: 208
+        height: 277
+      alignment: 9
+      pivot: {x: 0.59134614, y: 0.6841155}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9121d41d742e05d43844a7db9f598593
+      internalID: 642155580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatre_0007
+      rect:
+        serializedVersion: 2
+        x: 1601
+        y: 1141
+        width: 208
+        height: 277
+      alignment: 9
+      pivot: {x: 0.59134614, y: 0.6841155}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5193c7c79d5a89544b41f7ca23d935ea
+      internalID: 614766430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatre_0008
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 1151
+        width: 198
+        height: 267
+      alignment: 9
+      pivot: {x: 0.61616164, y: 0.7172285}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fe7bb94e24f2554089bf308d35e03b5
+      internalID: 767184566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatre_0009
+      rect:
+        serializedVersion: 2
+        x: 1601
+        y: 1732
+        width: 301
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5714286, y: 0.5095238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4b3c2fe8f651a6438a8de5cfa0b4fad
+      internalID: -480229998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatre_0010
+      rect:
+        serializedVersion: 2
+        x: 1601
+        y: 1732
+        width: 301
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5714286, y: 0.5095238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad93348caca5a70409b66adf7d0d4e9c
+      internalID: -2030240353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatre_0011
+      rect:
+        serializedVersion: 2
+        x: 1601
+        y: 1732
+        width: 301
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5714286, y: 0.5095238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1276a6d336f9a644f8d56898499acab9
+      internalID: 1477192241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatre_0012
+      rect:
+        serializedVersion: 2
+        x: 1601
+        y: 1732
+        width: 301
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5714286, y: 0.5095238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41d75a3fd3b56574aaf56ea2d7e3f262
+      internalID: -1735344258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatre_0013
+      rect:
+        serializedVersion: 2
+        x: 1601
+        y: 1732
+        width: 301
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5714286, y: 0.5095238}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6965bb8214342b54ab84f825592cdbc0
+      internalID: 2057506368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatre_0014
+      rect:
+        serializedVersion: 2
+        x: 1601
+        y: 1420
+        width: 285
+        height: 310
+      alignment: 9
+      pivot: {x: 0.54385966, y: 0.5564516}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec6ae79c3e6379749b3b56e8ddb2c6bf
+      internalID: -194650539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatre_0015
+      rect:
+        serializedVersion: 2
+        x: 1601
+        y: 1420
+        width: 285
+        height: 310
+      alignment: 9
+      pivot: {x: 0.54385966, y: 0.5564516}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 308a887627c0e4340ba09c7e58f7df28
+      internalID: -743546008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animatre_0016
+      rect:
+        serializedVersion: 2
+        x: 1601
+        y: 1420
+        width: 285
+        height: 310
+      alignment: 9
+      pivot: {x: 0.54385966, y: 0.5564516}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d39079c9690db7d469f2fbea225d6c20
+      internalID: 875262579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: end1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 518
+        width: 1567
+        height: 763
+      alignment: 9
+      pivot: {x: 0.5073389, y: 0.46133682}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea83983dcb4914e43942ae09f1ad8c87
+      internalID: -1980486494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: end2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1283
+        width: 1598
+        height: 764
+      alignment: 9
+      pivot: {x: 0.5006258, y: 0.460733}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb75e0334c8d35f42893cb95beaa74d5
+      internalID: -1639018551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      animatre_0015: -743546008
+      animatre_0016: 875262579
+      animatre_0002: -459514025
+      animatre_0003: 1459272816
+      animatre_0007: 614766430
+      animatre_0008: 767184566
+      animatre_0004: -166461187
+      animatre_0005: -1979542333
+      end2: -1639018551
+      animatre_0012: -1735344258
+      animatre_0013: 2057506368
+      animatre_0006: 642155580
+      animatre_0014: -194650539
+      animatre_0009: -480229998
+      animatre_0000: -2089936799
+      end1: -1980486494
+      animatre_0001: -1901797040
+      animatre_0010: -2030240353
+      animatre_0011: 1477192241
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

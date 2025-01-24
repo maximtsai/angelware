@@ -23,6 +23,9 @@ public class GameStateManager : MonoBehaviour
     public Timer timer;
     public Alert alert;
 
+    public GameObject bells;
+    public GameObject angel;
+
     private List<Vector3> originalPositions;
     private List<Vector3> leftPositions;
 
@@ -152,8 +155,10 @@ public class GameStateManager : MonoBehaviour
         {
             // trigger win condition
             Debug.Log("You win!");
+            angel.GetComponent<AngelMovement>().celebrateWin();
             timer.SetWon(); // so it doesn't trigger a lose. too much effort to do the same on the firewall
-            Invoke("Win", 1f);
+            bells.SetActive(true);
+            Invoke("Win", 5f);
         }
         
         switch (currentPhase)
